@@ -4,8 +4,6 @@ import uuid
 from datetime import datetime
 from typing import List, Dict, Any
 import logging
-
-# Import our custom classes
 from retriever.retriever import Retriever
 from generator.generator import Generator
 
@@ -13,64 +11,33 @@ class RAGPipeline:
     def __init__(self, retriever_model: str = 'all-MiniLM-L6-v2', 
                  generator_model: str = 'google/flan-t5-small',
                  log_file: str = 'logs/rag_logs.jsonl'):
-        """
-        Initialize the RAG pipeline with retriever and generator.
-        
-        Args:
-            retriever_model: SentenceTransformer model name for retrieval
-            generator_model: T5 model name for generation
-            log_file: Path to log file
-        """
         self.retriever = Retriever(model_name=retriever_model)
         self.generator = Generator(model_name=generator_model)
         self.log_file = log_file
         
-        # Create logs directory if it doesn't exist
         os.makedirs(os.path.dirname(log_file), exist_ok=True)
         
-        # Setup logging
         logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-        self.logger = logging.getLogger(__name__)
         
-        # Generate a unique group ID for this session
+        self.logger = logging.getLogger(__name__)
         self.group_id = str(uuid.uuid4())[:8]
         
         print(f"RAG Pipeline initialized with group_id: {self.group_id}")
     
     def add_documents(self, documents: List[str]) -> None:
-        """
-        Add documents to the retriever.
-        
-        Args:
-            documents: List of file paths or text strings
-        """
+
         self.logger.info(f"Adding {len(documents)} documents to retriever")
         self.retriever.add_documents(documents)
         self.logger.info("Documents successfully added and indexed")
     
     def query(self, question: str, k: int = 5, **generation_kwargs) -> Dict[str, Any]:
-        """
-        Run the complete RAG pipeline for a question.
-        
-        Args:
-            question: Input question
-            k: Number of chunks to retrieve
-            **generation_kwargs: Additional arguments for generation
-            
-        Returns:
-            Dictionary containing the complete pipeline output
-        """
+
         timestamp = datetime.now().isoformat()
-        
-        # Step 1: Retrieve relevant chunks
         self.logger.info(f"Retrieving chunks for question: {question[:100]}...")
         retrieved_chunks = self.retriever.query(question, k=k)
         
-        # Step 2: Generate answer
         self.logger.info("Generating answer...")
         generation_result = self.generator.answer_question(question, retrieved_chunks, **generation_kwargs)
-        
-        # Step 3: Prepare complete result
         result = {
             'question': question,
             'retrieved_chunks': retrieved_chunks,
@@ -81,8 +48,6 @@ class RAGPipeline:
             'num_chunks_used': len(retrieved_chunks),
             'context_sources': generation_result['context_sources']
         }
-        
-        # Step 4: Log the result
         self._log_query(result)
         
         return result
@@ -94,7 +59,7 @@ class RAGPipeline:
         Args:
             result: Complete pipeline result to log
         """
-        # Create a simplified log entry
+
         log_entry = {
             'question': result['question'],
             'retrieved_chunks': [
@@ -111,28 +76,16 @@ class RAGPipeline:
             'group_id': result['group_id']
         }
         
-        # Write to JSONL file
         with open(self.log_file, 'a', encoding='utf-8') as f:
             f.write(json.dumps(log_entry, ensure_ascii=False) + '\n')
     
     def save_retriever(self, filepath: str) -> None:
-        """Save the retriever to disk."""
         self.retriever.save(filepath)
     
     def load_retriever(self, filepath: str) -> None:
-        """Load the retriever from disk."""
         self.retriever.load(filepath)
     
     def run_test_questions(self, test_file: str = 'data/test_inputs.json') -> Dict[str, Any]:
-        """
-        Run pipeline on test questions and evaluate results.
-        
-        Args:
-            test_file: Path to test questions file
-            
-        Returns:
-            Dictionary containing test results
-        """
         if not os.path.exists(test_file):
             raise FileNotFoundError(f"Test file not found: {test_file}")
         
@@ -205,24 +158,11 @@ class RAGPipeline:
         return test_results
     
     def _check_grounding(self, answer: str, chunks: List[Dict[str, Any]]) -> bool:
-        """
-        Simple check to see if the answer appears to be grounded in the retrieved context.
-        
-        Args:
-            answer: Generated answer
-            chunks: Retrieved chunks
-            
-        Returns:
-            True if answer appears grounded in context
-        """
         if not answer or len(answer.strip()) < 5:
             return False
-        
-        # Combine all chunk text
         context_text = ' '.join([chunk['chunk'].lower() for chunk in chunks])
         answer_words = answer.lower().split()
         
-        # Check if a reasonable percentage of answer words appear in context
         matching_words = sum(1 for word in answer_words if word in context_text and len(word) > 3)
         
         return matching_words / len(answer_words) > 0.3 if answer_words else False
@@ -230,11 +170,9 @@ class RAGPipeline:
 def demo_pipeline():
     """Demo function to show the pipeline in action."""
     print("=== RAG Pipeline Demo ===")
-    
-    # Initialize pipeline
+
     pipeline = RAGPipeline()
     
-    # Sample documents (you can replace with actual file paths)
     sample_docs = [
         """
         Machine learning is a subset of artificial intelligence that enables computers to learn and make decisions from data without being explicitly programmed. 
@@ -254,11 +192,9 @@ def demo_pipeline():
         """
     ]
     
-    # Add documents
     print("Adding sample documents...")
     pipeline.add_documents(sample_docs)
     
-    # Sample questions
     questions = [
         "What is machine learning?",
         "Who created Python?",
@@ -266,7 +202,6 @@ def demo_pipeline():
         "What is Python used for?"
     ]
     
-    # Run queries
     for question in questions:
         print(f"\n{'='*50}")
         print(f"Question: {question}")
