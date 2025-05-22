@@ -47,34 +47,33 @@ Answer:"""
         
         return prompt
     
-    def generate_answer(self, prompt: str, max_length: int = 200, temperature: float = 0.7, 
-                       num_beams: int = 4, do_sample: bool = True) -> str:
+    def generate_answer(self, prompt: str, **kwargs) -> Dict[str, Any]:
+        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
         
-        inputs = self.tokenizer.encode(prompt, return_tensors='pt', max_length=1024, truncation=True)
-        inputs = inputs.to(self.device)
-        
+        # Generate with output scores
         with torch.no_grad():
-            if do_sample:
-                outputs = self.model.generate(
-                    inputs,
-                    max_length=max_length,
-                    temperature=temperature,
-                    do_sample=True,
-                    top_p=0.9,
-                    pad_token_id=self.tokenizer.eos_token_id
-                )
-            else:
-                outputs = self.model.generate(
-                    inputs,
-                    max_length=max_length,
-                    num_beams=num_beams,
-                    early_stopping=True,
-                    pad_token_id=self.tokenizer.eos_token_id
-                )
-        answer = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-        answer = answer.strip()
+            outputs = self.model.generate(
+                **inputs,
+                output_scores=True,
+                return_dict_in_generate=True,
+                **kwargs
+            )
         
-        return answer
+        # Calculate confidence score (average token probability)
+        scores = torch.stack(outputs.scores, dim=1)
+        confidence = torch.mean(torch.softmax(scores, dim=-1).max(dim=-1).values).item()
+        
+        answer = self.tokenizer.decode(outputs.sequences[0], skip_special_tokens=True)
+        
+        # Fallback if confidence is low or answer is generic
+        if confidence < 0.3 or "cannot find" in answer.lower():
+            answer = "I cannot confidently answer based on the provided context."
+        
+        return {
+            'answer': answer,
+            'confidence': round(confidence, 3),
+            'is_fallback': confidence < 0.3
+        }
     
     def answer_question(self, question: str, context_chunks: List[Dict[str, Any]], 
                        **generation_kwargs) -> Dict[str, Any]:

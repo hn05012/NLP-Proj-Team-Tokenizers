@@ -53,12 +53,6 @@ class RAGPipeline:
         return result
     
     def _log_query(self, result: Dict[str, Any]) -> None:
-        """
-        Log query results to file.
-        
-        Args:
-            result: Complete pipeline result to log
-        """
 
         log_entry = {
             'question': result['question'],
@@ -144,7 +138,6 @@ class RAGPipeline:
             'individual_results': results
         }
         
-        # Save test results
         results_file = f'logs/test_results_{self.group_id}.json'
         with open(results_file, 'w', encoding='utf-8') as f:
             json.dump(test_results, f, indent=2, ensure_ascii=False)
@@ -168,8 +161,7 @@ class RAGPipeline:
         return matching_words / len(answer_words) > 0.3 if answer_words else False
 
 def demo_pipeline():
-    """Demo function to show the pipeline in action."""
-    print("=== RAG Pipeline Demo ===")
+    print("=== Team Tokenizers RAG Pipeline Demo ===")
 
     pipeline = RAGPipeline()
     
