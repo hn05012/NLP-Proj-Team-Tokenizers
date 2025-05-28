@@ -1,0 +1,31 @@
+model                 , question                                                            , hit@1, hit@3, hit@5, mrr, latency_ms, memory_mb
+all-MiniLM-L6-v2      , What is machine learning?                                           ,     1,     1,     1, 1.0,     202.97,     419.5
+all-MiniLM-L6-v2      , Who created Python?                                                 ,     1,     1,     1, 1.0,      21.61,     422.7
+all-MiniLM-L6-v2      , When was Python first released?                                     ,     1,     1,     1, 1.0,      17.21,     427.0
+all-MiniLM-L6-v2      , What are the three main types of machine learning?                  ,     1,     1,     1, 1.0,      18.43,     427.6
+all-MiniLM-L6-v2      , What is Python used for?                                            ,     0,     1,     1, 0.5,      22.23,     428.1
+all-MiniLM-L6-v2      , What is supervised learning?                                        ,     1,     1,     1, 1.0,      18.06,     428.5
+all-MiniLM-L6-v2      , Name some popular Python libraries.                                 ,     1,     1,     1, 1.0,      20.19,     429.0
+all-MiniLM-L6-v2      , What programming paradigms does Python support?                     ,     1,     1,     1, 1.0,      18.26,     429.3
+all-MiniLM-L6-v2      , How does reinforcement learning work?                               ,     1,     1,     1, 1.0,      17.2 ,     429.7
+all-MiniLM-L6-v2      , What is the difference between supervised and unsupervised learning?,     1,     1,     1, 1.0,      19.41,     432.5
+BAAI/bge-small-en-v1.5, What is machine learning?                                           ,     1,     1,     1, 1.0,     144.55,     556.9
+BAAI/bge-small-en-v1.5, Who created Python?                                                 ,     1,     1,     1, 1.0,      35.14,     554.8
+BAAI/bge-small-en-v1.5, When was Python first released?                                     ,     1,     1,     1, 1.0,      31.27,     557.4
+BAAI/bge-small-en-v1.5, What are the three main types of machine learning?                  ,     1,     1,     1, 1.0,      35.39,     557.9
+BAAI/bge-small-en-v1.5, What is Python used for?                                            ,     0,     1,     1, 0.5,      34.91,     558.4
+BAAI/bge-small-en-v1.5, What is supervised learning?                                        ,     1,     1,     1, 1.0,      31.28,     558.9
+BAAI/bge-small-en-v1.5, Name some popular Python libraries.                                 ,     1,     1,     1, 1.0,      35.25,     559.3
+BAAI/bge-small-en-v1.5, What programming paradigms does Python support?                     ,     1,     1,     1, 1.0,      34.01,     559.6
+BAAI/bge-small-en-v1.5, How does reinforcement learning work?                               ,     1,     1,     1, 1.0,      30.75,     560.0
+BAAI/bge-small-en-v1.5, What is the difference between supervised and unsupervised learning?,     1,     1,     1, 1.0,      34.75,     560.4
+intfloat/e5-base-v2   , What is machine learning?                                           ,     1,     1,     1, 1.0,    1005.84,     698.0
+intfloat/e5-base-v2   , Who created Python?                                                 ,     1,     1,     1, 1.0,      98.85,     706.5
+intfloat/e5-base-v2   , When was Python first released?                                     ,     1,     1,     1, 1.0,      92.22,     707.1
+intfloat/e5-base-v2   , What are the three main types of machine learning?                  ,     1,     1,     1, 1.0,     100.66,     707.8
+intfloat/e5-base-v2   , What is Python used for?                                            ,     1,     1,     1, 1.0,     100.94,     708.4
+intfloat/e5-base-v2   , What is supervised learning?                                        ,     1,     1,     1, 1.0,      96.31,     708.9
+intfloat/e5-base-v2   , Name some popular Python libraries.                                 ,     1,     1,     1, 1.0,     102.87,     709.6
+intfloat/e5-base-v2   , What programming paradigms does Python support?                     ,     1,     1,     1, 1.0,      99.69,     710.0
+intfloat/e5-base-v2   , How does reinforcement learning work?                               ,     1,     1,     1, 1.0,      93.9 ,     710.4
+intfloat/e5-base-v2   , What is the difference between supervised and unsupervised learning?,     1,     1,     1, 1.0,      98.41,     710.8

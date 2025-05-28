@@ -15,6 +15,7 @@ nltk==3.9.1
 numpy==2.2.6
 packaging==25.0
 pillow==11.2.1
+psutil==7.0.0
 PyPDF2==3.0.1
 PyYAML==6.0.2
 regex==2024.11.6

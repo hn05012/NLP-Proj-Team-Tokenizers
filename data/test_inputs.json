@@ -1,42 +1,182 @@
 [
   {
     "question": "What is machine learning?",
-    "expected_answer": "Machine learning is a subset of artificial intelligence that enables computers to learn and make decisions from data without being explicitly programmed."
+    "expected_answer": "Machine learning is a subset of artificial intelligence that enables computers to learn and make decisions from data without being explicitly programmed.",
+    "context_chunks": [
+      {
+        "text": "Machine learning is a subset of AI that enables systems to learn patterns from data and improve with experience. Key approaches include supervised, unsupervised, and reinforcement learning.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python 3.12 introduced new syntax features including pattern matching and improved error messages.",
+        "contains_answer": false
+      },
+      {
+        "text": "The scikit-learn library provides tools for machine learning in Python, including classification and regression algorithms.",
+        "contains_answer": false
+      }
+    ]
   },
   {
     "question": "Who created Python?",
-    "expected_answer": "Python was created by Guido van Rossum."
+    "expected_answer": "Python was created by Guido van Rossum.",
+    "context_chunks": [
+      {
+        "text": "Python was conceived in the late 1980s by Guido van Rossum at CWI in the Netherlands as a successor to ABC language.",
+        "contains_answer": true
+      },
+      {
+        "text": "The Python Software Foundation manages license for Python 3.x versions and organizes PyCon conferences.",
+        "contains_answer": false
+      },
+      {
+        "text": "PEP 8 defines the style guide for Python code formatting and documentation standards.",
+        "contains_answer": false
+      }
+    ]
   },
   {
     "question": "When was Python first released?",
-    "expected_answer": "Python was first released in 1991."
+    "expected_answer": "Python was first released in 1991.",
+    "context_chunks": [
+      {
+        "text": "Python 0.9.0 was first released in February 1991, featuring exception handling and functions.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python 2.0 introduced list comprehensions and garbage collection in October 2000.",
+        "contains_answer": false
+      },
+      {
+        "text": "The Python Package Index (PyPI) was launched in 2003 to host third-party libraries.",
+        "contains_answer": false
+      }
+    ]
   },
   {
     "question": "What are the three main types of machine learning?",
-    "expected_answer": "The three main types of machine learning are supervised learning, unsupervised learning, and reinforcement learning."
+    "expected_answer": "The three main types of machine learning are supervised learning, unsupervised learning, and reinforcement learning.",
+    "context_chunks": [
+      {
+        "text": "Machine learning approaches fall into three categories: 1) Supervised (labeled data), 2) Unsupervised (pattern finding), 3) Reinforcement (reward-based).",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's scikit-learn provides separate modules for supervised and unsupervised learning algorithms.",
+        "contains_answer": false
+      },
+      {
+        "text": "The @dataclass decorator was introduced in Python 3.7 for creating classes primarily storing data.",
+        "contains_answer": false
+      }
+    ]
   },
   {
     "question": "What is Python used for?",
-    "expected_answer": "Python is widely used in web development, data science, artificial intelligence, automation, and scientific computing."
+    "expected_answer": "Python is widely used in web development, data science, artificial intelligence, automation, and scientific computing.",
+    "context_chunks": [
+      {
+        "text": "Python applications span web development (Django/Flask), data science (Pandas/NumPy), AI (TensorFlow), automation, and scientific computing.",
+        "contains_answer": true
+      },
+      {
+        "text": "CPython is the reference implementation of Python written in C and Python.",
+        "contains_answer": false
+      },
+      {
+        "text": "Virtual environments in Python allow isolating package installations for different projects.",
+        "contains_answer": false
+      }
+    ]
   },
   {
     "question": "What is supervised learning?",
-    "expected_answer": "Supervised learning uses labeled data to train models."
+    "expected_answer": "Supervised learning uses labeled data to train models.",
+    "context_chunks": [
+      {
+        "text": "In supervised learning, models are trained using labeled datasets where each example has known input-output pairs.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's 'with' statement simplifies resource management by automatically closing files after operations.",
+        "contains_answer": false
+      },
+      {
+        "text": "Decorators in Python allow modifying function behavior without changing source code.",
+        "contains_answer": false
+      }
+    ]
   },
   {
     "question": "Name some popular Python libraries.",
-    "expected_answer": "Popular Python libraries include NumPy for numerical computing, Pandas for data manipulation, and TensorFlow for machine learning."
+    "expected_answer": "Popular Python libraries include NumPy for numerical computing, Pandas for data manipulation, and TensorFlow for machine learning.",
+    "context_chunks": [
+      {
+        "text": "Essential Python libraries: NumPy (numerical computing), Pandas (data manipulation), TensorFlow (ML), Matplotlib (visualization), Requests (HTTP).",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's GIL (Global Interpreter Lock) prevents true multi-threading for CPU-bound tasks.",
+        "contains_answer": false
+      },
+      {
+        "text": "Type hints were introduced in Python 3.5 to optionally specify variable types.",
+        "contains_answer": false
+      }
+    ]
   },
   {
     "question": "What programming paradigms does Python support?",
-    "expected_answer": "Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming."
+    "expected_answer": "Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.",
+    "context_chunks": [
+      {
+        "text": "Python is multi-paradigm: procedural (functions), object-oriented (classes), functional (map/filter/lambda), and imperative programming.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's __init__.py files mark directories as package directories.",
+        "contains_answer": false
+      },
+      {
+        "text": "The Python Standard Library includes modules for file I/O, system calls, and internet protocols.",
+        "contains_answer": false
+      }
+    ]
   },
   {
     "question": "How does reinforcement learning work?",
-    "expected_answer": "Reinforcement learning involves agents learning through interaction with an environment."
+    "expected_answer": "Reinforcement learning involves agents learning through interaction with an environment.",
+    "context_chunks": [
+      {
+        "text": "Reinforcement learning agents learn by taking actions in an environment to maximize cumulative reward signals through trial and error.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's unittest module provides tools for writing and running tests.",
+        "contains_answer": false
+      },
+      {
+        "text": "Context managers in Python handle resource setup/teardown using __enter__ and __exit__ methods.",
+        "contains_answer": false
+      }
+    ]
   },
   {
     "question": "What is the difference between supervised and unsupervised learning?",
-    "expected_answer": "Supervised learning uses labeled data to train models, while unsupervised learning finds patterns in unlabeled data."
+    "expected_answer": "Supervised learning uses labeled data to train models, while unsupervised learning finds patterns in unlabeled data.",
+    "context_chunks": [
+      {
+        "text": "Key difference: Supervised learning requires labeled training data (input-output pairs), while unsupervised learning discovers hidden patterns in unlabeled data.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's asyncio module provides infrastructure for writing single-threaded concurrent code.",
+        "contains_answer": false
+      },
+      {
+        "text": "PEP 484 introduced type hints to make Python code more maintainable and IDE-friendly.",
+        "contains_answer": false
+      }
+    ]
   }
 ]
