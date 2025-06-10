@@ -1,0 +1,168 @@
+[
+  {
+    "question": "VSCode Python extension loading forever, saying “Reactivating terminals”",
+    "expected_answer": "These steps solved my issue: Open VS Code Settings search for Python Locator switch from native to js. restart the vs code",
+    "context_chunks": [
+      {
+        "text": "After updating VS code to v1.92, the Python extension consistently fails to launch, indefinitely showing a spinner next to “Reactivating terminals…” on the status bar. Selecting OUTPUT &gt; Python reveals the error Failed to resolve env &quot;/mnt/data-linux/miniconda3&quot;. Here’s the error trace: 2024-08-07 18:35:35.873 [error] sendStartupTelemetry() failed. s [Error]: Failed to resolve env &quot;/mnt/data-linux/miniconda3&quot; at ae (/home/user/.vscode-insiders/extensions/ms-python.python-2024.12.2-linux-x64/out/client/extension.js:2:1968174) at oe (/home/user/.vscode-insiders/extensions/ms-python.python-2024.12.2-linux-x64/out/client/extension.js:2:1966134) at Immediate.&lt;anonymous&gt; (/home/user/.vscode-insiders/extensions/ms-python.python-2024.12.2-linux-x64/out/client/extension.js:2:1962428) at processImmediate (node:internal/timers:478:21) { code: -4, data: undefined } How do I fix this? Restarting worked, but that's not sustainable.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "These steps solved my issue: Open VS Code Settings search for Python Locator switch from native to js. restart the vs code",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "This appears to be a bug related to the new &quot;native&quot; Python locator. You can go back to the old working version by adding the following line to the user settings JSON (until the bug in the native locator is fixed): &quot;python.locator&quot;: &quot;js&quot;, Note that this workaround pins you to the legacy version which is not something you'll want to have around forever so you might want to report your issue on Github at https://github.com/microsoft/vscode-python/issues. There've been many issues already filed and many solved but it's a work in progress. Example issues: https://github.com/microsoft/vscode-python/issues/23922 https://github.com/microsoft/vscode-python/issues/23963 https://github.com/microsoft/vscode-python/issues/23956",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "visual-studio-code"],
+      "question_score": 81,
+      "answer_score": 131,
+      "created": "2024-08-19T02:31:16",
+      "question_id": 78886125,
+      "answer_id": 79002808
+    }
+  },
+  {
+    "question": "UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown plt.show()",
+    "expected_answer": "I have the same issue. In my case, I installed the PyQt5==5.15.10. After that, I run my code successfully. pip install PyQt5==5.15.10 or pip install PyQt5 with python==3.11 But from 2024, you guys should install version PyQt6 or the last version with python==3.12 or later.",
+    "context_chunks": [
+      {
+        "text": "I am using Windows 10 PyCharm 2021.3.3 Professional Edition python 3.11.5 matplotlib 3.8.1 How can I permanently resolve this issue in my development environment? import numpy as np import matplotlib matplotlib.use('Agg') import matplotlib.pyplot as plt # Read data from file, skipping the first row (header) data = np.loadtxt('cm.dat', skiprows=1) # Initialize reference point x0, y0, z0 = data[0] # Compute squared displacement for each time step SD = [(x - x0)**2 + (y - y0)**2 + (z - z0)**2 for x, y, z in data] # Compute the cumulative average of SD to get MSD at each time step MSD = np.cumsum(SD) / np.arange(1, len(SD) + 1) # Generate time steps t = np.arange(1, len(SD) + 1) # Create a log-log plot of MSD versus t plt.figure(figsize=(8, 6)) plt.loglog(t, MSD, marker='o') plt.title('Mean Squared Displacement vs Time') plt.xlabel('Time step') plt.ylabel('MSD') plt.grid(True, which=&quot;both&quot;, ls=&quot;--&quot;) plt.show() C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\python.exe C:/git/RouseModel/tau_plot.py C:\\git\\RouseModel\\tau_plot.py:29: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown plt.show() Process finished with exit code 0",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "I have the same issue. In my case, I installed the PyQt5==5.15.10. After that, I run my code successfully. pip install PyQt5==5.15.10 or pip install PyQt5 with python==3.11 But from 2024, you guys should install version PyQt6 or the last version with python==3.12 or later.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "This is a terrible answer, but I wasn't really sure where to put it. If you are using a more up to date version of Python, and are in the year 2024, you may have issues installing PyQT5, the solution is to install PyQt6, using Poetry it was: poetry add pyqt6 or using pip: pip install PyQt6 I was having issues with PyQt5, and when I used the newly released version, things worked immediately.",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "matplotlib", "pycharm"],
+      "question_score": 66,
+      "answer_score": 96,
+      "created": "2023-11-18T15:40:11",
+      "question_id": 77507580,
+      "answer_id": 77644828
+    }
+  },
+  {
+    "question": "numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",
+    "expected_answer": "The reason is that pandas defines its numpy dependency freely as &quot;anything newer than certain version of numpy&quot;. The problem occured, when numpy==2.0.0 has been released on June 16th 2024, because it is no longer compatible with your pandas version. The solution is to pin down the numpy version to any before the 2.0.0. Today it could be (this is the most recent numpy 1 release): numpy==1.26.4 To be added in your requirements or to the pip command you use (but together with installing pandas). Nowadays pip is very flexible and can handle the issue flawesly. You just need to ask it to install both pandas and numpy of given versions in the same pip install invocation.",
+    "context_chunks": [
+      {
+        "text": "I want to call my Python module from the Matlab. I received the error: Error using numpy_ops&gt;init thinc.backends.numpy_ops Python Error: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject. The Python script is as follows import spacy def text_recognizer(model_path, text): try: # Load the trained model nlp = spacy.load(model_path) print(&quot;Model loaded successfully.&quot;) # Process the given text doc = nlp(text) ent_labels = [(ent.text, ent.label_) for ent in doc.ents] return ent_labels The Matlab script is as follows % Set up the Python environment pe = pyenv; py.importlib.import_module('final_output'); % Add the directory containing the Python script to the Python path path_add = fileparts(which('final_output.py')); if count(py.sys.path, path_add) == 0 insert(py.sys.path, int64(0), path_add); end % Define model path and text to process model_path = 'D:\\trained_model\\\\output\\\\model-best'; text = 'Roses are red'; % Call the Python function pyOut = py.final_output.text_recognizer(model_path, text); % Convert the output to a MATLAB cell array entity_labels = cell(pyOut); disp(entity_labels); I found one solution to update Numpy, what I did, but nothing changed. I am using Python 3.9 and Numpy version 2.0.0 The error was received when I tried to call the Python module using a Matlab script. How can I fix the issue?",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "The reason is that pandas defines its numpy dependency freely as &quot;anything newer than certain version of numpy&quot;. The problem occured, when numpy==2.0.0 has been released on June 16th 2024, because it is no longer compatible with your pandas version. The solution is to pin down the numpy version to any before the 2.0.0. Today it could be (this is the most recent numpy 1 release): numpy==1.26.4 To be added in your requirements or to the pip command you use (but together with installing pandas). Nowadays pip is very flexible and can handle the issue flawesly. You just need to ask it to install both pandas and numpy of given versions in the same pip install invocation.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "downgrade your numpy version to 1.26.4",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "numpy", "matlab", "spacy"],
+      "question_score": 179,
+      "answer_score": 260,
+      "created": "2024-06-17T18:52:57",
+      "question_id": 78634235,
+      "answer_id": 78641304
+    }
+  },
+  {
+    "question": "pandas FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version",
+    "expected_answer": "In case of following distinct examples: ser1 = pd.Series([False, True, float(&quot;nan&quot;)]) ser1 = ser1.fillna(False) and ser2 = pd.Series([&quot;Zero&quot;, 5, 2.3]) ser2 = ser2.replace(&quot;Zero&quot;, 0) the use of an option context combined with infer_objects at the end seems to be the most generic solution to get rid of the FutureWarning: with pd.option_context(&quot;future.no_silent_downcasting&quot;, True): ser1 = ser1.fillna(False).infer_objects(copy=False) and with pd.option_context(&quot;future.no_silent_downcasting&quot;, True): ser2 = ser2.replace(&quot;Zero&quot;, 0).infer_objects(copy=False) Probably better is to be more specific and use astype(bool) and astype(float) instead of infer_objects(copy=False) in the above. Remark that other proposed solutions don't work in this case: The use of infer_objects(copy=False) before fillna or replace: ser1.infer_objects(copy=False).fillna(False) ser2.infer_objects(copy=False).replace(&quot;Zero&quot;, 0) doesn't get rid of the FutureWarning. The use of astype before fillna or replace is even more dangerous as it returns the wrong result for the first example: ser1.astype(bool).fillna(False) and raises a ValueError for the second example: ser2.astype(float).replace(&quot;Zero&quot;, 0) I would not recommend setting pandas.set_option(&quot;future.no_silent_downcasting&quot;, True) as this may hide issues elsewhere.",
+    "context_chunks": [
+      {
+        "text": "In order to print dataframes nicely using tabulate, so that NaN and NaT are printed as empty cells, I've been using this successfully: print(tabulate(df.astype(object).fillna(&quot;&quot;))) Now, this causes the following warning: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. I don't know what I should do instead now. I certainly don't see how infer_objects(copy=False) would help as the whole point here is indeed to force converting everything to a string representation and filling in missing values with empty strings.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "In case of following distinct examples: ser1 = pd.Series([False, True, float(&quot;nan&quot;)]) ser1 = ser1.fillna(False) and ser2 = pd.Series([&quot;Zero&quot;, 5, 2.3]) ser2 = ser2.replace(&quot;Zero&quot;, 0) the use of an option context combined with infer_objects at the end seems to be the most generic solution to get rid of the FutureWarning: with pd.option_context(&quot;future.no_silent_downcasting&quot;, True): ser1 = ser1.fillna(False).infer_objects(copy=False) and with pd.option_context(&quot;future.no_silent_downcasting&quot;, True): ser2 = ser2.replace(&quot;Zero&quot;, 0).infer_objects(copy=False) Probably better is to be more specific and use astype(bool) and astype(float) instead of infer_objects(copy=False) in the above. Remark that other proposed solutions don't work in this case: The use of infer_objects(copy=False) before fillna or replace: ser1.infer_objects(copy=False).fillna(False) ser2.infer_objects(copy=False).replace(&quot;Zero&quot;, 0) doesn't get rid of the FutureWarning. The use of astype before fillna or replace is even more dangerous as it returns the wrong result for the first example: ser1.astype(bool).fillna(False) and raises a ValueError for the second example: ser2.astype(float).replace(&quot;Zero&quot;, 0) I would not recommend setting pandas.set_option(&quot;future.no_silent_downcasting&quot;, True) as this may hide issues elsewhere.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "Convert the DataFrame/Series type first Example: df.astype(float).fillna(value) Infer the objects' type with infer_objects df.infer_objects(copy=False).fillna(value) Where value is a compatible type of the inferred objects: Setting pandas.set_option(&quot;future.no_silent_downcasting&quot;, True) seems to work to remove the warning too, but I don't know if this is the correct behavior (as also pointed out by @mrgou in the comments). Explanation The arrays are of the type object and, when you call fillna, it tries to infer the objects' type which issues this warning.",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "pandas", "downcast"],
+      "question_score": 65,
+      "answer_score": 20,
+      "created": "2024-01-29T15:54:50",
+      "question_id": 77900971,
+      "answer_id": 78066237
+    }
+  },
+  {
+    "question": "&quot;cannot import name &#39;DEFAULT_CIPHERS&#39; from &#39;urllib3.util.ssl_&#39;&quot; on AWS Lambda using a layer",
+    "expected_answer": "cannot import name 'DEFAULT_CIPHERS' from 'urllib3.util.ssl_' You are encountering this issue because you’re using botocore which does not support urllib3 2.0 yet. Since you’re deploying to AWS Lambda, you’ll need to explicitly pin to urllib3&lt;2 in your project to ensure urllib3 2.0 isn’t brought into your environment. (Source) urllib3&lt;2 Follow this guide for how to deploy Python Lambda functions with .zip file archives. If you cannot get it to work via the .zip file, consider deploying via a container image instead by following this guide.",
+    "context_chunks": [
+      {
+        "text": "What I want to achieve To scrape an website using AWS Lambda and save the data on S3. The issues I'm having When I execute Lambda, the following error message appears. { &quot;errorMessage&quot;: &quot;Unable to import module 'lambda_function': cannot import name 'DEFAULT_CIPHERS' from 'urllib3.util.ssl_' (/opt/python/urllib3/util/ssl_.py)&quot;, &quot;errorType&quot;: &quot;Runtime.ImportModuleError&quot;, &quot;requestId&quot;: &quot;fb66bea9-cbad-4bd3-bd4d-6125454e21be&quot;, &quot;stackTrace&quot;: [] } Code The minimum Lambda code is as follows. import requests import boto3 def lambda_handler(event, context): s3 = boto3.client('s3') upload_res = s3.put_object(Bucket='horserace-dx', Key='/raw/a.html', Body='testtext') return event An layer was added to the Lambda. Files were save in python folder using the commands below , frozen in a zip file, then uploaded to AWS Lambda as a layer. !pip install requests -t ./python --no-user !pip install pandas -t ./python --no-user !pip install beautifulsoup4 -t ./python --no-user The bucket horserace-dx exists The folder raw exists The role of the Lambda is properly set. It can read from and write to S3 The runtime of the Lambda is Python 3.9. The python version of the local computer is 3.9.13. What I did so far I google &quot;cannot import name 'DEFAULT_CIPHERS' from 'urllib3.util.ssl_'&quot; and found some suggestions. I made the layer with the following code and tried again in vain. !pip install requests -t ./python --no-user !pip install pandas -t ./python --no-user !pip install beautifulsoup4 -t ./python --no-user !pip install urllib3==1.26.15 -t ./python --no-user So what should I do to achieve what I want to achieve? Any suggestions would be greatly appreciated.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "cannot import name 'DEFAULT_CIPHERS' from 'urllib3.util.ssl_' You are encountering this issue because you’re using botocore which does not support urllib3 2.0 yet. Since you’re deploying to AWS Lambda, you’ll need to explicitly pin to urllib3&lt;2 in your project to ensure urllib3 2.0 isn’t brought into your environment. (Source) urllib3&lt;2 Follow this guide for how to deploy Python Lambda functions with .zip file archives. If you cannot get it to work via the .zip file, consider deploying via a container image instead by following this guide.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "In my case I just specified requests version (runtime python3.9) - requests==2.28.2 and it worked.",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": [
+        "python",
+        "amazon-web-services",
+        "amazon-s3",
+        "aws-lambda",
+        "boto3"
+      ],
+      "question_score": 70,
+      "answer_score": 70,
+      "created": "2023-06-06T12:10:43",
+      "question_id": 76414514,
+      "answer_id": 76430749
+    }
+  }
+]

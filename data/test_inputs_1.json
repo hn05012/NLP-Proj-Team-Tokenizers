@@ -1,0 +1,678 @@
+[
+  {
+    "question": "What is machine learning?",
+    "expected_answer": "Machine learning is a subset of artificial intelligence that enables computers to learn and make decisions from data without being explicitly programmed.",
+    "context_chunks": [
+      {
+        "text": "Machine learning is a subset of AI that enables systems to learn patterns from data and improve with experience. Key approaches include supervised, unsupervised, and reinforcement learning.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python 3.12 introduced new syntax features including pattern matching and improved error messages.",
+        "contains_answer": false
+      },
+      {
+        "text": "The scikit-learn library provides tools for machine learning in Python, including classification and regression algorithms.",
+        "contains_answer": false
+      }
+    ]
+  },
+  {
+    "question": "Who created Python?",
+    "expected_answer": "Python was created by Guido van Rossum.",
+    "context_chunks": [
+      {
+        "text": "Python was conceived in the late 1980s by Guido van Rossum at CWI in the Netherlands as a successor to ABC language.",
+        "contains_answer": true
+      },
+      {
+        "text": "The Python Software Foundation manages license for Python 3.x versions and organizes PyCon conferences.",
+        "contains_answer": false
+      },
+      {
+        "text": "PEP 8 defines the style guide for Python code formatting and documentation standards.",
+        "contains_answer": false
+      }
+    ]
+  },
+  {
+    "question": "When was Python first released?",
+    "expected_answer": "Python was first released in 1991.",
+    "context_chunks": [
+      {
+        "text": "Python 0.9.0 was first released in February 1991, featuring exception handling and functions.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python 2.0 introduced list comprehensions and garbage collection in October 2000.",
+        "contains_answer": false
+      },
+      {
+        "text": "The Python Package Index (PyPI) was launched in 2003 to host third-party libraries.",
+        "contains_answer": false
+      }
+    ]
+  },
+  {
+    "question": "What are the three main types of machine learning?",
+    "expected_answer": "The three main types of machine learning are supervised learning, unsupervised learning, and reinforcement learning.",
+    "context_chunks": [
+      {
+        "text": "Machine learning approaches fall into three categories: 1) Supervised (labeled data), 2) Unsupervised (pattern finding), 3) Reinforcement (reward-based).",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's scikit-learn provides separate modules for supervised and unsupervised learning algorithms.",
+        "contains_answer": false
+      },
+      {
+        "text": "The @dataclass decorator was introduced in Python 3.7 for creating classes primarily storing data.",
+        "contains_answer": false
+      }
+    ]
+  },
+  {
+    "question": "What is Python used for?",
+    "expected_answer": "Python is widely used in web development, data science, artificial intelligence, automation, and scientific computing.",
+    "context_chunks": [
+      {
+        "text": "Python applications span web development (Django/Flask), data science (Pandas/NumPy), AI (TensorFlow), automation, and scientific computing.",
+        "contains_answer": true
+      },
+      {
+        "text": "CPython is the reference implementation of Python written in C and Python.",
+        "contains_answer": false
+      },
+      {
+        "text": "Virtual environments in Python allow isolating package installations for different projects.",
+        "contains_answer": false
+      }
+    ]
+  },
+  {
+    "question": "What is supervised learning?",
+    "expected_answer": "Supervised learning uses labeled data to train models.",
+    "context_chunks": [
+      {
+        "text": "In supervised learning, models are trained using labeled datasets where each example has known input-output pairs.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's 'with' statement simplifies resource management by automatically closing files after operations.",
+        "contains_answer": false
+      },
+      {
+        "text": "Decorators in Python allow modifying function behavior without changing source code.",
+        "contains_answer": false
+      }
+    ]
+  },
+  {
+    "question": "Name some popular Python libraries.",
+    "expected_answer": "Popular Python libraries include NumPy for numerical computing, Pandas for data manipulation, and TensorFlow for machine learning.",
+    "context_chunks": [
+      {
+        "text": "Essential Python libraries: NumPy (numerical computing), Pandas (data manipulation), TensorFlow (ML), Matplotlib (visualization), Requests (HTTP).",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's GIL (Global Interpreter Lock) prevents true multi-threading for CPU-bound tasks.",
+        "contains_answer": false
+      },
+      {
+        "text": "Type hints were introduced in Python 3.5 to optionally specify variable types.",
+        "contains_answer": false
+      }
+    ]
+  },
+  {
+    "question": "What programming paradigms does Python support?",
+    "expected_answer": "Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.",
+    "context_chunks": [
+      {
+        "text": "Python is multi-paradigm: procedural (functions), object-oriented (classes), functional (map/filter/lambda), and imperative programming.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's __init__.py files mark directories as package directories.",
+        "contains_answer": false
+      },
+      {
+        "text": "The Python Standard Library includes modules for file I/O, system calls, and internet protocols.",
+        "contains_answer": false
+      }
+    ]
+  },
+  {
+    "question": "How does reinforcement learning work?",
+    "expected_answer": "Reinforcement learning involves agents learning through interaction with an environment.",
+    "context_chunks": [
+      {
+        "text": "Reinforcement learning agents learn by taking actions in an environment to maximize cumulative reward signals through trial and error.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's unittest module provides tools for writing and running tests.",
+        "contains_answer": false
+      },
+      {
+        "text": "Context managers in Python handle resource setup/teardown using __enter__ and __exit__ methods.",
+        "contains_answer": false
+      }
+    ]
+  },
+  {
+    "question": "What is the difference between supervised and unsupervised learning?",
+    "expected_answer": "Supervised learning uses labeled data to train models, while unsupervised learning finds patterns in unlabeled data.",
+    "context_chunks": [
+      {
+        "text": "Key difference: Supervised learning requires labeled training data (input-output pairs), while unsupervised learning discovers hidden patterns in unlabeled data.",
+        "contains_answer": true
+      },
+      {
+        "text": "Python's asyncio module provides infrastructure for writing single-threaded concurrent code.",
+        "contains_answer": false
+      },
+      {
+        "text": "PEP 484 introduced type hints to make Python code more maintainable and IDE-friendly.",
+        "contains_answer": false
+      }
+    ]
+  },
+  {
+    "question": "Why does inspect fail to get source file for classes in a dynamically-imported module?",
+    "expected_answer": "The logic for getting the source file for a class looks like this: if isclass(object): if hasattr(object, '__module__'): module = sys.modules.get(object.__module__) if getattr(module, '__file__', None): return module.__file__ if object.__module__ == '__main__': raise OSError('source code not available') raise TypeError('{!r} is a built-in class'.format(object)) In your case module.Bar.__module__ is 'thing2', which has not been added to sys.modules. Hence this machinery concludes (incorrectly) that it must be built-in, and raises an error claiming as much. Am I missing something during my import step that tells Python how to get source info for classes? Yes; note that the recipe in the importlib docs includes an explicit step to update sys.modules, as exec_module doesn't do it: import importlib.util import sys def import_from_path(module_name, file_path): spec = importlib.util.spec_from_file_location(module_name, file_path) module = importlib.util.module_from_spec(spec) sys.modules[module_name] = module spec.loader.exec_module(module) return module Similarly adding sys.modules[&quot;thing2&quot;] = module into thing1.py would allow it to show the class implementation.",
+    "context_chunks": [
+      {
+        "text": "inspect.getsource() and inspect.getsourcefile() can access source info for a function, but not for a class, when they are in a module that is imported dynamically with importlib. Here are two files, thing1.py and thing2.py: thing1.py import inspect import os import importlib.util dir_here = os.path.dirname(__file__) spec = importlib.util.spec_from_file_location(&quot;thing2&quot;, os.path.join(dir_here, &quot;thing2.py&quot;)) module = importlib.util.module_from_spec(spec) spec.loader.exec_module(module) print(module.foo(3)) print(module.Bar().inc(3)) print(&quot;module source file:&quot;, inspect.getsourcefile(module)) for attr in ['foo','Bar']: print(&quot;%s source: %s&quot; % (attr, inspect.getsourcefile(getattr(module, attr)))) print(inspect.getsource(getattr(module, attr))) thing2.py def foo(x): return x+1 class Bar(object): def inc(self, x): return x+1 If I run test1.py here's what I get: &gt; python c:\\tmp\\python\\test2\\thing1.py 4 4 module source file: c:\\tmp\\python\\test2\\thing2.py foo source: c:\\tmp\\python\\test2\\thing2.py def foo(x): return x+1 Traceback (most recent call last): File &quot;c:\\tmp\\python\\test2\\thing1.py&quot;, line 16, in &lt;module&gt; print(&quot;%s source: %s&quot; % (attr, inspect.getsourcefile(getattr(module, attr)))) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File &quot;C:\\Users\\jason\\.conda\\envs\\py3datalab\\Lib\\inspect.py&quot;, line 940, in getsourcefile filename = getfile(object) ^^^^^^^^^^^^^^^ File &quot;C:\\Users\\jason\\.conda\\envs\\py3datalab\\Lib\\inspect.py&quot;, line 909, in getfile raise TypeError('{!r} is a built-in class'.format(object)) TypeError: &lt;class 'thing2.Bar'&gt; is a built-in class I'm using Python 3.11.4. Am I missing something during my import step that tells Python how to get source info for classes?",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "The logic for getting the source file for a class looks like this: if isclass(object): if hasattr(object, '__module__'): module = sys.modules.get(object.__module__) if getattr(module, '__file__', None): return module.__file__ if object.__module__ == '__main__': raise OSError('source code not available') raise TypeError('{!r} is a built-in class'.format(object)) In your case module.Bar.__module__ is 'thing2', which has not been added to sys.modules. Hence this machinery concludes (incorrectly) that it must be built-in, and raises an error claiming as much. Am I missing something during my import step that tells Python how to get source info for classes? Yes; note that the recipe in the importlib docs includes an explicit step to update sys.modules, as exec_module doesn't do it: import importlib.util import sys def import_from_path(module_name, file_path): spec = importlib.util.spec_from_file_location(module_name, file_path) module = importlib.util.module_from_spec(spec) sys.modules[module_name] = module spec.loader.exec_module(module) return module Similarly adding sys.modules[&quot;thing2&quot;] = module into thing1.py would allow it to show the class implementation.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "python-importlib", "python-inspect"],
+      "question_score": 0,
+      "answer_score": 1,
+      "created": "2025-05-29T23:33:53",
+      "question_id": 79644734,
+      "answer_id": 79644743
+    }
+  },
+  {
+    "question": "I am trying to call a function in thonny and then printing the variable changed by the function. Why isn&#39;t it working?",
+    "expected_answer": "You need to call global inside the function in order to access the global variable. def player(): global health health = 100 player() print(health) Output 100",
+    "context_chunks": [
+      {
+        "text": "You need to call global inside the function in order to access the global variable. def player(): global health health = 100 player() print(health) Output 100",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "i define the function &quot;player&quot; and inside, assign the variable &quot;health&quot;. def player(): health = 100 player() print(health) but when i try to run the program, i recieve this error. i tried to make the variable health global like this global health def player(): health = 100 player() print(health) and it still doesn't work.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "function", "thonny"],
+      "question_score": 1,
+      "answer_score": 2,
+      "created": "2025-05-29T22:12:37",
+      "question_id": 79644683,
+      "answer_id": 79644686
+    }
+  },
+  {
+    "question": "Printing only a 2d part of a 3d array as a grid",
+    "expected_answer": "to print just the first part of the 3d numpy array as a 2d grid, you can index into the first 2d array using M[0]. M = np.array([[[3,3,3], [3,3,3], [3,3,3]], [[4,4,4], [4,4,4], [4,4,4]]]) #print the first 2d part for row in M[0]: print(' '.join(map(str, row))) output: 3 3 3 3 3 3 3 3 3",
+    "context_chunks": [
+      {
+        "text": "Do you mean something like this? for item in M[0]: print(item) Output: [3 3 3] [3 3 3] [3 3 3]",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "I have a 3d storage array like this: M = np.array([[[3,3,3], [3,3,3], [3,3,3]], [[4,4,4], [4,4,4], [4,4,4]]]) and I want to print just the first part of the array as a grid like this: 3 3 3 3 3 3 3 3 3 I already know how to print a 2d array in a grid, but do not know how I would print only that section.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "to print just the first part of the 3d numpy array as a 2d grid, you can index into the first 2d array using M[0]. M = np.array([[[3,3,3], [3,3,3], [3,3,3]], [[4,4,4], [4,4,4], [4,4,4]]]) #print the first 2d part for row in M[0]: print(' '.join(map(str, row))) output: 3 3 3 3 3 3 3 3 3",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "multidimensional-array"],
+      "question_score": -1,
+      "answer_score": 0,
+      "created": "2025-05-29T21:45:17",
+      "question_id": 79644666,
+      "answer_id": 79644695
+    }
+  },
+  {
+    "question": "Closing the end of a print statement",
+    "expected_answer": "As apparently you want to include JSON syntax in your output, use the json library instead of assembling a JSON string yourself. For example: import json # ... ... ... obj = { &quot;notes&quot;: [{ &quot;id&quot;: i + 1, &quot;vector&quot;: embeddings[0], &quot;payload&quot;: { &quot;node&quot;: texts[0] } }] } print(&quot;PUT collection/ObsiidanNotes/notes&quot;) print(json.dumps(obj, indent=4)) This way you avoid errors in that JSON syntax, like for instance misbalancing brackets. Using two print calls (one for static text, another for JSON) seems fine to me. But if you really need it with one print, then: print(f&quot;PUT collection/ObsiidanNotes/notes\\n{json.dumps(obj, indent=4)}&quot;)",
+    "context_chunks": [
+      {
+        "text": "print( &quot;PUT collection/ObsiidanNotes/notes\\n&quot; &quot;{\\n&quot; &quot;\\&quot;notes\\&quot;: [\\n&quot; &quot;{\\n&quot; &quot;\\&quot;id\\&quot;: i+1,\\n&quot; &quot;\\&quot;vector\\&quot;:&quot; embeddings[0], &quot;\\n&quot; &quot;\\&quot;payload\\&quot;: {\\n&quot; &quot;\\&quot;note\\&quot;&quot;: texts[0] &quot;}\\n&quot; &quot;},\\n&quot; &quot;}\\n&quot;) Im sure it's a simple fix I just can't figure out how to close the print statement.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "There are multiple syntax errors with your code. Please follow up on them next time, and definitely put the relevant part into the question, like so: &quot;PUT collection/ObsiidanNotes/notes\\n&quot; ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ SyntaxError: invalid syntax. Perhaps you forgot a comma? Here is a small first improvement that is at least free of syntax errors. Note the extra commas and correctly placed : below: embeddings = [&quot;a&quot;] texts = [&quot;b&quot;] print( &quot;PUT collection/ObsiidanNotes/notes\\n&quot; , &quot;{\\n&quot;, &quot;\\&quot;notes\\&quot;: [\\n&quot;, &quot;{\\n&quot;, &quot;\\&quot;id\\&quot;: i+1,\\n&quot;, &quot;\\&quot;vector\\&quot;:&quot;, embeddings[0], &quot;\\n&quot;, &quot;\\&quot;payload\\&quot;: {\\n&quot;, &quot;\\&quot;note\\&quot;:&quot;, texts[0], &quot;}\\n&quot;, &quot;},\\n&quot;, &quot;}\\n&quot;) But I would recommend a multiline string instead, which avoids the issues with newlines, concatenation and commas altogether - plus allows to easily create the proper indentation: statement = (&quot;&quot;&quot;PUT collection/ObsiidanNotes/notes { 'notes': [ { 'id': i+1, 'vector': %s, 'payload': { 'note': %s } }, } &quot;&quot;&quot; % (embeddings[0], texts[0])) print(statement) Output (note the indentation): PUT collection/ObsiidanNotes/notes { 'notes': [ { 'id': i+1, 'vector': a, 'payload': { 'note': b } }, }",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "Actually, Python has several types of strings, and ways to interpolate code with strings, which, by the way evolve with time. I suspect that this flexibility is one of the keys for the early popularization of the language, some 25 years ago. Note that the error in your code snippet is in assuming strings will concatenate with any other expression just by adding a space, like they do with adjacent strings - i.e. &quot;\\&quot;vector\\&quot;:&quot; embeddings[0] is a syntax error. Your original statement could be fixed by adding commas to separate the expressions from the strings, like in &quot;\\&quot;vector\\&quot;:&quot;, embeddings[0], &quot;\\n&quot; - but that fall shorts of what Python syntax allows you to do. WHat you are doing there is simply over typing, and over complex - you can use Python multi-line strings, with triple quotes, which will include the newlines in your source code inside the string, and therefore no need to type them explicitly. Also, there is no need to escape the quotes themselves: the string is kept open until another triple-quote occurence is found: And the f-string interpolation allows you to include variables and expressions within the string text with no need to close and reopen quotes:\\ (but it requires escaping curly braces by doubling them): print( f&quot;&quot;&quot;PUT collection/ObsiidanNotes/notes { &quot;notes&quot;: [ {{ &quot;id&quot;: i+1, &quot;vector&quot;: {embeddings[0]}, &quot;payload&quot;: {{ &quot;note&quot;: {texts[0]} }} }}] } &quot;&quot;&quot;) That said, you'd probably be better creating a real Python dictionary containing your data, and them convert it to string by using the json.dumps call: it would feel way more natural: import json def function(): ... data = {&quot;notes&quot;: [ { &quot;id&quot;: &quot;i+1&quot;, &quot;vector&quot;: embeddings[0], &quot;payload&quot;: { &quot;note&quot;: texts[0] } } ] } print(&quot;PUT collection/ObsiidanNotes/notes&quot;, json.dumps(data), sep=&quot;\\n&quot;) The main advantage of this is that the Python script will only run if the brackets match in a structure that makes sense ( see that in the first example, I missed a ] just when editing to remove redundant quotes) (The sep named argument to print will take care of inserting the newline between the PUT line and the content - ) The one thing that would not be straightforward in this approach is that in your data, the i + 1 expression is unquoted -that is not valid json, and therefore it can't be generated with JSON.dumps. An easy workaround, if you intend to follow this route (to get the main advantage of validated data structures) is to insert a marker that would go unquoted in the JSON structure (so, a &quot;magic number&quot; and then use the .replace string method to replace your unquoted expressions: import json def function(): ... expression_dictionary = { &quot;99901&quot;: &quot;i + 1&quot;, # here 99901 is a value which wouldn't occur in the data structure. My suggestion is to use the '999' as a prefix, so a second expression could use '99902' and so on ... } data = {&quot;notes&quot;: [ { &quot;id&quot;: 99901, &quot;vector&quot;: embeddings[0], &quot;payload&quot;: { &quot;note&quot;: texts[0] } } ] } str_data = json.dumps(data, indent=4) for marker, expression in expression_dictionary.items(): str_data = str_data.replace(marker, expression) print(&quot;PUT collection/ObsiidanNotes/notes&quot;, str_data, sep=&quot;\\n&quot;)",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "As apparently you want to include JSON syntax in your output, use the json library instead of assembling a JSON string yourself. For example: import json # ... ... ... obj = { &quot;notes&quot;: [{ &quot;id&quot;: i + 1, &quot;vector&quot;: embeddings[0], &quot;payload&quot;: { &quot;node&quot;: texts[0] } }] } print(&quot;PUT collection/ObsiidanNotes/notes&quot;) print(json.dumps(obj, indent=4)) This way you avoid errors in that JSON syntax, like for instance misbalancing brackets. Using two print calls (one for static text, another for JSON) seems fine to me. But if you really need it with one print, then: print(f&quot;PUT collection/ObsiidanNotes/notes\\n{json.dumps(obj, indent=4)}&quot;)",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python"],
+      "question_score": -1,
+      "answer_score": 3,
+      "created": "2025-05-29T19:27:08",
+      "question_id": 79644515,
+      "answer_id": 79644550
+    }
+  },
+  {
+    "question": "Why is my script not adding a file into the output folder?",
+    "expected_answer": "The most probable cause is that your image_files list is empty, and as a result, the loop does not get executed. Try printing out some valuable information to see what's contained in your input folder. image_files = [ f for f in os.listdir(input_folder) if f.lower().endswith(('.png', '.jpg', '.tif')) and '_masks' not in f ] image_files.sort() print(&quot;Input folder:&quot;, input_folder) print(&quot;Raw contents:&quot;, os.listdir(input_folder)) print(&quot;Filtered images:&quot;, image_files) If Raw contents is non-empty but Filtered images is [] , then you need to check your filtering logic and make it more flexible. If Raw contents is indeed empty, then you most likely have the wrong path or input_folder is empty.",
+    "context_chunks": [
+      {
+        "text": "This script should take a file from an input folder, put it through a pretrained model, and put the results in the output folder. I get no errors. import os import numpy as np import imageio.v2 as imageio from cellpose import models model_path = r&quot;C:\\Users\\TomoCube\\Desktop\\New Testing\\trained_model\\models\\cellpose_residual_on_style_on_concatenation_off_trained_model_2025_05_29_14_15_22.066364&quot; input_folder = r&quot;C:\\Users\\TomoCube\\Desktop\\Input Folder&quot; output_folder = r&quot;C:\\Users\\TomoCube\\Desktop\\Output Folder&quot; os.makedirs(output_folder, exist_ok=True) # 🔧 TEST: Write a dummy file to confirm save path works dummy_test_path = os.path.join(output_folder, &quot;dummy_test.tif&quot;) imageio.imwrite(dummy_test_path, np.zeros((10, 10), dtype='uint16')) print(f&quot;✅ Dummy test file saved: {dummy_test_path}&quot;) model = models.CellposeModel(pretrained_model=model_path, gpu=False) image_files = [ f for f in os.listdir(input_folder) if f.lower().endswith(('.png', '.jpg', '.tif')) and '_masks' not in f ] image_files.sort() for filename in image_files: image_path = os.path.join(input_folder, filename) print(f&quot;\\n🔍 Processing: {filename}&quot;) img = imageio.imread(image_path) print(f&quot; ➤ Image shape: {img.shape}, dtype: {img.dtype}&quot;) masks, flows, styles = model.eval(img, channels=[0, 0]) print(f&quot; ➤ masks.max(): {masks.max()}, dtype: {masks.dtype}, shape: {masks.shape}&quot;) output_filename = f&quot;{os.path.splitext(filename)[0]}_mask.tif&quot; output_path = os.path.join(output_folder, output_filename) try: imageio.imwrite(output_path, masks.astype('uint16')) print(f&quot; ✅ Mask saved: {output_path}&quot;) except Exception as e: print(f&quot; ❌ Failed to save mask for {filename}: {e}&quot;) print(&quot;\\n✅ All done! Masks saved to:&quot;, output_folder) I tried updating all possible issues but I was getting nothing.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "The most probable cause is that your image_files list is empty, and as a result, the loop does not get executed. Try printing out some valuable information to see what's contained in your input folder. image_files = [ f for f in os.listdir(input_folder) if f.lower().endswith(('.png', '.jpg', '.tif')) and '_masks' not in f ] image_files.sort() print(&quot;Input folder:&quot;, input_folder) print(&quot;Raw contents:&quot;, os.listdir(input_folder)) print(&quot;Filtered images:&quot;, image_files) If Raw contents is non-empty but Filtered images is [] , then you need to check your filtering logic and make it more flexible. If Raw contents is indeed empty, then you most likely have the wrong path or input_folder is empty.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "file-io"],
+      "question_score": 0,
+      "answer_score": 1,
+      "created": "2025-05-29T18:40:53",
+      "question_id": 79644463,
+      "answer_id": 79644488
+    }
+  },
+  {
+    "question": "Numpy delete() function increases memory usage",
+    "expected_answer": "np.delete() creates a new array rather than modifying the existing array in place. In your example, you can use slicing which is O(1) raster_np = raster_np[:, 1:] # if SCL is first column.",
+    "context_chunks": [
+      {
+        "text": "raster_np = np.delete(raster_np, scl_index, axis=1) np.delete returns a new array. It does not modify raster_np in place. Assigning that result back to raster_np replaces it locally, but because this occurs in a function, it does not replace the external reference. So now you have the original raster_np and this new deleted array. The final assignment raster = clean_data(raster) may drop the memory use, depending on garbage collection and overall memory management issues.",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "I am using np.delete(), to drop a specific band from my ndarray. However, while profiling the memory usage with memory profiler, I noticed that after using np.delete, the memory usage doubles, even though I would expect it slightly decrease. Here the full example: import numpy as np def clean_data(raster_np): # Build column names scl_index = 0 scl = raster_np[:, scl_index] # Create mask for invalid SCL values invalid_scl_mask = np.isin(scl, [0, 1, 2, 3, 6, 7, 8, 9, 10, 11, 12]) # Set rows to NaN where SCL is invalid raster_np[invalid_scl_mask, :] = np.nan # Drop SCL column raster_np = np.delete(raster_np, scl_index, axis=1) # Replace 0s with NaN raster_np[raster_np == 0] = np.nan return raster # Function call raster, meta = load_s2_tile(...) raster = clean_data(raster) Here the profiling output (See line 33): Line # Mem usage Increment Occurrences Line Contents ============================================================= 20 5647.9 MiB 5647.9 MiB 1 @profile 21 def clean_data(raster_np): 22 # Build column names 23 5647.9 MiB 0.0 MiB 1 scl_index = 0 24 5647.9 MiB 0.0 MiB 1 scl = raster_np[:, scl_index] 25 26 # Create mask for invalid SCL values 27 5762.9 MiB 115.0 MiB 1 invalid_scl_mask = np.isin(scl, [0, 1, 2, 3, 6, 7, 8, 9, 10, 11, 12]) 28 29 # Set rows to NaN where SCL is invalid 30 5762.9 MiB 0.0 MiB 1 raster_np[invalid_scl_mask, :] = np.nan 31 32 # Drop SCL column 33 10821.6 MiB 5058.8 MiB 1 raster_np = np.delete(raster_np, scl_index, axis=1) 34 35 # Replace 0s with NaN 36 10821.8 MiB 0.2 MiB 1 raster_np[raster_np == 0] = np.nan 37 38 39 10821.8 MiB 0.0 MiB 1 return raster If someone could point out why this is the case and how to avoid this, that would be great! I would not expect this behaviour as I do not have any other references to raster",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "np.delete() creates a new array rather than modifying the existing array in place. In your example, you can use slicing which is O(1) raster_np = raster_np[:, 1:] # if SCL is first column.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": [
+        "python",
+        "numpy",
+        "memory-management",
+        "memory-leaks",
+        "garbage-collection"
+      ],
+      "question_score": 1,
+      "answer_score": 1,
+      "created": "2025-05-29T17:39:11",
+      "question_id": 79644373,
+      "answer_id": 79644419
+    }
+  },
+  {
+    "question": "Would python function any() iterate or just locate the item if used with a hashset",
+    "expected_answer": "According to the Cpython Github and the Python Docs. This is equivalent to the &quot;any&quot; function: def any(iterable): for element in iterable: if element: return True return False So it iterates. This is python as pseudocode, so it may be different in reality, but I don't think that there's some special black magic C optimisation here. These built-in functions are generic, special cases like this (if the collection becomes big enough) might be handled better by your own implementation. EDIT: FOUND THE ACTUAL SOURCE CODE static PyObject * builtin_any(PyObject *module, PyObject *iterable) /*[clinic end generated code: output=fa65684748caa60e input=41d7451c23384f24]*/ { PyObject *it, *item; PyObject *(*iternext)(PyObject *); int cmp; it = PyObject_GetIter(iterable); if (it == NULL) return NULL; iternext = *Py_TYPE(it)-&gt;tp_iternext; for (;;) { item = iternext(it); if (item == NULL) break; cmp = PyObject_IsTrue(item); Py_DECREF(item); if (cmp &lt; 0) { Py_DECREF(it); return NULL; } if (cmp &gt; 0) { Py_DECREF(it); Py_RETURN_TRUE; } } Py_DECREF(it); if (PyErr_Occurred()) { if (PyErr_ExceptionMatches(PyExc_StopIteration)) PyErr_Clear(); else return NULL; } Py_RETURN_FALSE; } Without deeper research into the functions, variables and (more likely than variables...) constants being used I don't understand the source code completely, but it looks like &quot;any&quot; iterates indefinitely until there's no object or it finds a &quot;True&quot; object. There's no function referring to analysing types and/or using special logic. It also handles the reference count of variables (which may or may not have a name) for the garbage collector. There doesn't seem to be anything more to it.",
+    "context_chunks": [
+      {
+        "text": "When we run any(fnmatch(a,b) for a in set_) we aren't looking up elements by their value, but testing each value in the set against a predicate function. That's fundamentally an iterative process. The good news is that any() is lazy: as soon as it finds an element in set_ that passes the condition, it will immediately return. (Conversely, if no element in the set matches, then the entire generator will be exhausted by testing each element in turn.)",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "According to the Cpython Github and the Python Docs. This is equivalent to the &quot;any&quot; function: def any(iterable): for element in iterable: if element: return True return False So it iterates. This is python as pseudocode, so it may be different in reality, but I don't think that there's some special black magic C optimisation here. These built-in functions are generic, special cases like this (if the collection becomes big enough) might be handled better by your own implementation. EDIT: FOUND THE ACTUAL SOURCE CODE static PyObject * builtin_any(PyObject *module, PyObject *iterable) /*[clinic end generated code: output=fa65684748caa60e input=41d7451c23384f24]*/ { PyObject *it, *item; PyObject *(*iternext)(PyObject *); int cmp; it = PyObject_GetIter(iterable); if (it == NULL) return NULL; iternext = *Py_TYPE(it)-&gt;tp_iternext; for (;;) { item = iternext(it); if (item == NULL) break; cmp = PyObject_IsTrue(item); Py_DECREF(item); if (cmp &lt; 0) { Py_DECREF(it); return NULL; } if (cmp &gt; 0) { Py_DECREF(it); Py_RETURN_TRUE; } } Py_DECREF(it); if (PyErr_Occurred()) { if (PyErr_ExceptionMatches(PyExc_StopIteration)) PyErr_Clear(); else return NULL; } Py_RETURN_FALSE; } Without deeper research into the functions, variables and (more likely than variables...) constants being used I don't understand the source code completely, but it looks like &quot;any&quot; iterates indefinitely until there's no object or it finds a &quot;True&quot; object. There's no function referring to analysing types and/or using special logic. It also handles the reference count of variables (which may or may not have a name) for the garbage collector. There doesn't seem to be anything more to it.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "to clarify, it would be used like any(set()). I am asking for efficiency sake. Example: if any(fnmatch(a,b) for a in set) where a would be an item in a set and b would be a string.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "set", "any"],
+      "question_score": 0,
+      "answer_score": 1,
+      "created": "2025-05-29T17:05:04",
+      "question_id": 79644335,
+      "answer_id": 79644504
+    }
+  },
+  {
+    "question": "Fastest way to bulk-write lossless WebP from a NumPy RGBA array in Python?",
+    "expected_answer": "Here are a few things that helped me improve speed in a similar setup: 1. Use webp.WebPConfig + WebPPicture Instead of imwrite(), try going lower-level. You can set method=0, thread_level=1, and fine-tune compression settings manually. This gives better control and usually better performance. 2. Encode to memory first Use webp.encode() to get the encoded bytes in memory, then write to disk separately. You can also write to a RAM disk to avoid I/O bottlenecks. 3. Split encoding and writing Even with multiprocessing, ensure encoding and writing are handled in separate steps or pools. Encoding, then queuing, and then writing is much more efficient than doing both in a single worker.",
+    "context_chunks": [
+      {
+        "text": "I’m generating a few thousand RGBA frames as NumPy arrays (shape=(H, W, 4), dtype=uint8) and need to dump them all as lossless WebP as fast as possible. Right now I’m using: import webp import numpy as np def save_frame(path: str, img: np.ndarray): # img is HxWx4,uint8 webp.imwrite(path, img, lossless=True) It works, but writing ~15 K images still takes quite a while. I’ve looked at cv2.imencode and imwrite, but they were slower than webp.imwrite. What’s the best approach (in-process or via a C library) for maximum throughput? My code is already completely parallel and runs on any CPU core. The question is rather how to maximize the per-process throughput. Thanks for all suggestions in advance!",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "Here are a few things that helped me improve speed in a similar setup: 1. Use webp.WebPConfig + WebPPicture Instead of imwrite(), try going lower-level. You can set method=0, thread_level=1, and fine-tune compression settings manually. This gives better control and usually better performance. 2. Encode to memory first Use webp.encode() to get the encoded bytes in memory, then write to disk separately. You can also write to a RAM disk to avoid I/O bottlenecks. 3. Split encoding and writing Even with multiprocessing, ensure encoding and writing are handled in separate steps or pools. Encoding, then queuing, and then writing is much more efficient than doing both in a single worker.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "numpy", "performance", "webp"],
+      "question_score": 0,
+      "answer_score": 0,
+      "created": "2025-05-29T17:01:31",
+      "question_id": 79644331,
+      "answer_id": 79644651
+    }
+  },
+  {
+    "question": "Extract the max of a cumulative sum from dataframe column",
+    "expected_answer": "To extract the date and the cumulative total right before each outage (i.e., where col1 changes from 1 to 0), we can identify the rows where col1 == 0, then look at the row just before each of those and get the Date and col2 values. See demo: https://www.online-python.com/zmTHRWUfKr import pandas as pd data = { &quot;Date&quot;: [ &quot;5/29/2025&quot;, &quot;5/31/2025&quot;, &quot;6/1/2025&quot;, &quot;6/2/2025&quot;, &quot;6/3/2025&quot;, &quot;6/4/2025&quot;, &quot;6/5/2025&quot;, &quot;6/6/2025&quot;, &quot;6/7/2025&quot;, &quot;6/8/2025&quot;, &quot;6/9/2025&quot;, &quot;6/10/2025&quot; ], &quot;col1&quot;: [1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1], &quot;col2&quot;: [1, 2, 3, 4, 0, 0, 0, 1, 2, 3, 4, 5] } df = pd.DataFrame(data) df[&quot;Date&quot;] = pd.to_datetime(df[&quot;Date&quot;]) # Find where a 1 is followed by a 0 (transition point) transition_idx = df[(df[&quot;col1&quot;] == 1) &amp; (df[&quot;col1&quot;].shift(-1) == 0)].index result = df.loc[transition_idx, [&quot;Date&quot;, &quot;col2&quot;]].rename(columns={&quot;col2&quot;: &quot;DaysOnline&quot;}) # If the last row is 1, include it as well if df[&quot;col1&quot;].iloc[-1] == 1: result = pd.concat([ result, df.iloc[[-1]][[&quot;Date&quot;, &quot;col2&quot;]].rename(columns={&quot;col2&quot;: &quot;DaysOnline&quot;}) ]) print(result)",
+    "context_chunks": [
+      {
+        "text": "I have a DataFrame column containing values of 0 and 1. Values of 0 indicate a piece of equipment is offline, while 1 indicates the equipment is running. To calculate the days online between outages, I used: df['col2'] = df[col1].groupby(df_proc[col1].eq(0).cumsum()).cumcount() df['col2'] contains a cumulative total of the days online between outages. Example: I need to extract the date and the cumumlative total before each of the outages into a separate dataframe. From the example above I would want: Date DaysOnline 6/2/2025 4 6/10/2025 5 I obviously am a novice at Python and Stack Overflow. Any help would be appreciated.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "To extract the date and the cumulative total right before each outage (i.e., where col1 changes from 1 to 0), we can identify the rows where col1 == 0, then look at the row just before each of those and get the Date and col2 values. See demo: https://www.online-python.com/zmTHRWUfKr import pandas as pd data = { &quot;Date&quot;: [ &quot;5/29/2025&quot;, &quot;5/31/2025&quot;, &quot;6/1/2025&quot;, &quot;6/2/2025&quot;, &quot;6/3/2025&quot;, &quot;6/4/2025&quot;, &quot;6/5/2025&quot;, &quot;6/6/2025&quot;, &quot;6/7/2025&quot;, &quot;6/8/2025&quot;, &quot;6/9/2025&quot;, &quot;6/10/2025&quot; ], &quot;col1&quot;: [1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1], &quot;col2&quot;: [1, 2, 3, 4, 0, 0, 0, 1, 2, 3, 4, 5] } df = pd.DataFrame(data) df[&quot;Date&quot;] = pd.to_datetime(df[&quot;Date&quot;]) # Find where a 1 is followed by a 0 (transition point) transition_idx = df[(df[&quot;col1&quot;] == 1) &amp; (df[&quot;col1&quot;].shift(-1) == 0)].index result = df.loc[transition_idx, [&quot;Date&quot;, &quot;col2&quot;]].rename(columns={&quot;col2&quot;: &quot;DaysOnline&quot;}) # If the last row is 1, include it as well if df[&quot;col1&quot;].iloc[-1] == 1: result = pd.concat([ result, df.iloc[[-1]][[&quot;Date&quot;, &quot;col2&quot;]].rename(columns={&quot;col2&quot;: &quot;DaysOnline&quot;}) ]) print(result)",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "pandas"],
+      "question_score": 1,
+      "answer_score": 1,
+      "created": "2025-05-29T16:58:31",
+      "question_id": 79644324,
+      "answer_id": 79644347
+    }
+  },
+  {
+    "question": "How to fetch flow run data from Prefect Cloud (v3.x) using Python REST API for dashboarding?",
+    "expected_answer": "You may use wrong API_KEY It should be start with 'pnu_' or 'pnb_'. If not, you need to create new API-KEY https://app.prefect.cloud/my/api-keys You can check your API KEY from CMD prefect cloud login -k &lt;API_KEY&gt; You will get response Authenticated with Prefect Cloud! Using workspace '&lt;your user name&gt;/default'. If wrong API key or expired API KEY, get this error Unable to authenticate with Prefect Cloud. Please ensure your credentials are correct and unexpired. Your REST API URL is correct POST https://api.prefect.cloud/api/accounts/&lt;Your_Account_ID&gt;/workspaces/&lt;Your_WORKSPACES_ID&gt;/flow_runs/filter You can get Account ID, Workspace ID and Flow ID in here After Login, go flows menu at left pannel. https://app.prefect.cloud Demo As save as demo.py import requests import json # Constants API_URL = &quot;https://api.prefect.cloud/api/accounts/&lt;Your_Account_ID&gt;/workspaces/&lt;Your_WORKSPACES_ID&gt;&quot; API_KEY = &quot;&lt;Your_API_Key&gt;&quot; # Need to start with 'pnu_' or 'pnb_'. # Payload data = { &quot;flow_filter&quot;: { &quot;id&quot;: { &quot;any_&quot;: [&quot;&lt;Your_Flow_ID&gt;&quot;] } }, &quot;limit&quot;: 10 } # Headers headers = { &quot;Authorization&quot;: f&quot;Bearer {API_KEY}&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } # Endpoint endpoint = f&quot;{API_URL}/flow_runs/filter&quot; # Request response = requests.post(endpoint, headers=headers, json=data) # Output print(&quot;Status code:&quot;, response.status_code) try: json_data = response.json() print(&quot;Response JSON:&quot;) print(json.dumps(json_data, indent=4)) # &lt;-- Pretty print here except Exception as e: print(&quot;Failed to parse response as JSON:&quot;, e) print(&quot;Raw response text:&quot;, response.text) Replace with YOUR &lt;Your_Account_ID&gt; &lt;Your_WORKSPACES_ID&gt; &lt;Your_Flow_ID&gt; &lt;Your_API_Key&gt; Result More detail REST API information in here",
+    "context_chunks": [
+      {
+        "text": "You may use wrong API_KEY It should be start with 'pnu_' or 'pnb_'. If not, you need to create new API-KEY https://app.prefect.cloud/my/api-keys You can check your API KEY from CMD prefect cloud login -k &lt;API_KEY&gt; You will get response Authenticated with Prefect Cloud! Using workspace '&lt;your user name&gt;/default'. If wrong API key or expired API KEY, get this error Unable to authenticate with Prefect Cloud. Please ensure your credentials are correct and unexpired. Your REST API URL is correct POST https://api.prefect.cloud/api/accounts/&lt;Your_Account_ID&gt;/workspaces/&lt;Your_WORKSPACES_ID&gt;/flow_runs/filter You can get Account ID, Workspace ID and Flow ID in here After Login, go flows menu at left pannel. https://app.prefect.cloud Demo As save as demo.py import requests import json # Constants API_URL = &quot;https://api.prefect.cloud/api/accounts/&lt;Your_Account_ID&gt;/workspaces/&lt;Your_WORKSPACES_ID&gt;&quot; API_KEY = &quot;&lt;Your_API_Key&gt;&quot; # Need to start with 'pnu_' or 'pnb_'. # Payload data = { &quot;flow_filter&quot;: { &quot;id&quot;: { &quot;any_&quot;: [&quot;&lt;Your_Flow_ID&gt;&quot;] } }, &quot;limit&quot;: 10 } # Headers headers = { &quot;Authorization&quot;: f&quot;Bearer {API_KEY}&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } # Endpoint endpoint = f&quot;{API_URL}/flow_runs/filter&quot; # Request response = requests.post(endpoint, headers=headers, json=data) # Output print(&quot;Status code:&quot;, response.status_code) try: json_data = response.json() print(&quot;Response JSON:&quot;) print(json.dumps(json_data, indent=4)) # &lt;-- Pretty print here except Exception as e: print(&quot;Failed to parse response as JSON:&quot;, e) print(&quot;Raw response text:&quot;, response.text) Replace with YOUR &lt;Your_Account_ID&gt; &lt;Your_WORKSPACES_ID&gt; &lt;Your_Flow_ID&gt; &lt;Your_API_Key&gt; Result More detail REST API information in here",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "I'm trying to build an Excel-based dashboard from data in Prefect Cloud (3.x). What I'm trying to do: Track each flow's number of runs Count how many succeeded, failed, or are still running Export this to an Excel file using Python (pandas, openpyxl) My environment: Prefect Cloud (3.x) prefect cloud login -k &lt;API_KEY&gt; works successfully I'm using a virtual environment with prefect==3.4.3, pandas, and requests What’s not working: When I try to hit this URL from Python code: url = &quot;https://api.prefect.cloud/api/accounts/&lt;ACCOUNT_ID&gt;/workspaces/&lt;WORKSPACE_ID&gt;/flow_runs/filter&quot; With this POST payload: payload = { &quot;flow_filter&quot;: { &quot;id&quot;: { &quot;any_&quot;: [&quot;&lt;FLOW_ID&gt;&quot;] } }, &quot;limit&quot;: 10 } and proper Authorization headers headers = { &quot;Authorization&quot;: f&quot;Bearer {API_KEY}&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } Getting output as: Status code: 404 Response: {&quot;detail&quot;:&quot;Not Found&quot;} The same URL works in browser/cURL on my local machine but fails from my VM. I’ve confirmed the API key is valid (cloud login works), and I’m able to run prefect flow ls and prefect flow-run ls from CLI. When debugging with requests, I also hit this error sometimes: JSONDecodeError: Expecting value: line 1 column 1 (char 0) which usually means the response is empty or not JSON. What I've tried: Verified the full URL structure Tested connectivity with curl and ping from my VM Ensured Authorization: Bearer &lt;API_KEY&gt; header is set Added debug logging to print response.status_code and response.text Recreated venv, reinstalled Prefect What I'm asking: What's the correct way to query flow runs from Prefect Cloud 3.x using Python and REST API? Am I missing something in headers, payload, or URL structure? Do I need any special workspace authentication/permissions beyond API key? Any known gotchas with VM access to Prefect Cloud API? Any help is deeply appreciated — I’ve been banging my head on this all day 😅",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "dashboard", "azure-devops-rest-api", "prefect"],
+      "question_score": 0,
+      "answer_score": 0,
+      "created": "2025-05-29T15:39:35",
+      "question_id": 79644205,
+      "answer_id": 79644514
+    }
+  },
+  {
+    "question": "How to read long digits from Excel by Pandas and add apostrophe to cells?",
+    "expected_answer": "Use the dtype argument to read_excel to load that column as a string, not a number.",
+    "context_chunks": [
+      {
+        "text": "I have an excel file where one line contains id that is 16-digit number. It looks like: item1 item2 item3 1234567890123456 1234567866623000 1234567877722000 1320 800 201 2019-01-05 2020-01-04 2017-06-05 I use python and pandas to read it. When I read it by pandas some ids are malformed - last digits are different, i.e. 1234567866623000 becomes 1234567866622992. I think it is because excel has 15-digits precision, but my ids are 16 digits. Code that reads excel file is: import pandas as pd ... df = pd.read_excel(filepath, sheet_name='MyList', header=None) When I convert cells to str type in pandas some ids are still malformed. But when I add apostrophe ' before each id in excel file it becomes the text type in excel and then pandas reads values correctly without loss of precision. How do I add apostrophe in the begginging of every cell in one row using pandas? Or is it any better way to read 16-digits id from excel?",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "Use the dtype argument to read_excel to load that column as a string, not a number.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "pandas"],
+      "question_score": 0,
+      "answer_score": 1,
+      "created": "2025-05-29T14:47:51",
+      "question_id": 79644117,
+      "answer_id": 79644131
+    }
+  },
+  {
+    "question": "How to efficiently recurse through PySpark DataFrame?",
+    "expected_answer": "As suggested by Emma, GraphFrames worked great. You first have to define the nodes (which in my case was the list of distinct materials) and the edges (everything else), then create the graph, iterate through the levels of the graph, and union all the results together. Here's the code: from pyspark.sql import functions as F, types as T, SparkSession from graphframes import GraphFrame spark = SparkSession.builder.getOrCreate() df = spark.createDataFrame( [ (&quot;A&quot;, &quot;A1&quot;, 1300, 1.0), (&quot;A&quot;, &quot;A2&quot;, 1300, 0.056), (&quot;A&quot;, &quot;A3&quot;, 1300, 2.78), (&quot;A&quot;, &quot;B&quot;, 1300, 1300.5), (&quot;B&quot;, &quot;B1&quot;, 1000, 1007.0), (&quot;B&quot;, &quot;B2&quot;, 1000, 3.5), (&quot;B&quot;, &quot;C&quot;, 1000, 9.0), (&quot;C&quot;, &quot;C1&quot;, 800, 806.4), ], [&quot;Material&quot;, &quot;Component&quot;, &quot;BatchSize&quot;, &quot;RequiredQuantity&quot;], ) nodes = ( df.select(F.col(&quot;Material&quot;).alias(&quot;id&quot;)) .union(df.select(F.col(&quot;Component&quot;).alias(&quot;id&quot;))) .distinct() ) edges = ( df.select( F.col(&quot;Material&quot;).alias(&quot;src&quot;), F.col(&quot;Component&quot;).alias(&quot;dst&quot;), &quot;BatchSize&quot;, &quot;RequiredQuantity&quot; ) .union( df.select( &quot;Component&quot;, F.lit(None), F.lit(None), F.lit(None), F.lit(None), ) ) .distinct() ) graph = GraphFrame(nodes, edges) @F.udf(T.DoubleType()) def calculate_quantity(*edges: list[dict]) -&gt; float: result = edges[0][&quot;RequiredQuantity&quot;] for e in edges[1:]: result *= e[&quot;RequiredQuantity&quot;] / e[&quot;BatchSize&quot;] return result results = spark.createDataFrame([], df.schema) i = 1 while True: query = &quot;;&quot;.join(f&quot;(v{j})-[e{j}]-&gt;(v{j+1})&quot; for j in range(i)) tmp = graph.find(query) if tmp.isEmpty(): break results = results.union( tmp.select( F.col(&quot;v0&quot;)[&quot;id&quot;], F.col(f&quot;v{i}&quot;)[&quot;id&quot;], F.col(&quot;e0&quot;)[&quot;BatchSize&quot;], calculate_quantity(*(col for col in tmp.columns if col.startswith(&quot;e&quot;))), ) ) i += 1 This only took a little over 7 minutes to run for all ~5000 materials. FYI: If you're doing this in a notebook in Fabric like I am, you'll need to add these at the top (or create an environment with these included): %%configure -f { &quot;conf&quot;: { &quot;spark.jars.packages&quot;: &quot;graphframes:graphframes:0.8.4-spark3.5-s_2.12&quot; } } %pip install graphframes-py",
+    "context_chunks": [
+      {
+        "text": "I have a DataFrame which looks roughly like this: Material Component BatchSize RequiredQuantity A A1 1300 1.0 A A2 1300 0.056 A A3 1300 2.78 A B 1300 1300.5 B B1 1000 1007 B B2 1000 3.5 B C 1000 9 C C1 800 806.4 For each material, I need to loop through the components and recurse down to the lowest level components while adding a row for each one and performing a calculation to normalize the RequiredQuantity for the new rows: RequiredQuantity / BatchSize * Parent RequiredQuantity. The resulting DataFrame should look like this: Material Component BatchSize RequiredQuantity A A1 1300 1.0 A A2 1300 0.056 A A3 1300 2.78 A B 1300 1300.5 A B1 1300 1309.6035 A B2 1300 4.55175 A C 1300 11.7045 A C1 1300 11.798136 B B1 1000 1007 B B2 1000 3.5 B C 1000 9 B C1 1000 9.072 C C1 800 806.4 I tried writing a recursive function, which does work, but is extremely slow, taking roughly 5 minutes per material. This would be fine for a small table, but in our case we have almost 5000 different materials, each of which has roughly 10 different components, so it would take weeks to get through it all. I'm hoping there's a better way to handle this. Here's the PySpark code I wrote: def recurse_components(df, material): if df.isEmpty(): return df filtered_material = df.where(F.col(&quot;Material&quot;) == material) batch_size = filtered_material.select(&quot;BatchSize&quot;).first()[&quot;BatchSize&quot;] component_list = ( filtered_material.select(&quot;Component&quot;).rdd.flatMap(lambda x: x).collect() ) for component in component_list: component_table = df.where(F.col(&quot;Material&quot;) == component) if not component_table.isEmpty(): required_quantity = ( filtered_material.where(F.col(&quot;Component&quot;) == component) .select(&quot;RequiredQuantity&quot;) .first()[&quot;RequiredQuantity&quot;] ) recursive_call = recurse_components(df, component).withColumns( { &quot;Material&quot;: F.lit(material), &quot;RequiredQuantity&quot;: F.col(&quot;RequiredQuantity&quot;) * required_quantity / F.col(&quot;BatchSize&quot;), &quot;BatchSize&quot;: F.lit(batch_size), } ) filtered_material = filtered_material.union(recursive_call) return filtered_material material_list = df.select(&quot;Material&quot;).distinct().rdd.flatMap(lambda x: x).collect() extended_df = spark.createDataFrame([], df.schema) for material in material_list: extended_df = extended_df.union(recurse_components(df, material)) Any help would be greatly appreciated.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "As suggested by Emma, GraphFrames worked great. You first have to define the nodes (which in my case was the list of distinct materials) and the edges (everything else), then create the graph, iterate through the levels of the graph, and union all the results together. Here's the code: from pyspark.sql import functions as F, types as T, SparkSession from graphframes import GraphFrame spark = SparkSession.builder.getOrCreate() df = spark.createDataFrame( [ (&quot;A&quot;, &quot;A1&quot;, 1300, 1.0), (&quot;A&quot;, &quot;A2&quot;, 1300, 0.056), (&quot;A&quot;, &quot;A3&quot;, 1300, 2.78), (&quot;A&quot;, &quot;B&quot;, 1300, 1300.5), (&quot;B&quot;, &quot;B1&quot;, 1000, 1007.0), (&quot;B&quot;, &quot;B2&quot;, 1000, 3.5), (&quot;B&quot;, &quot;C&quot;, 1000, 9.0), (&quot;C&quot;, &quot;C1&quot;, 800, 806.4), ], [&quot;Material&quot;, &quot;Component&quot;, &quot;BatchSize&quot;, &quot;RequiredQuantity&quot;], ) nodes = ( df.select(F.col(&quot;Material&quot;).alias(&quot;id&quot;)) .union(df.select(F.col(&quot;Component&quot;).alias(&quot;id&quot;))) .distinct() ) edges = ( df.select( F.col(&quot;Material&quot;).alias(&quot;src&quot;), F.col(&quot;Component&quot;).alias(&quot;dst&quot;), &quot;BatchSize&quot;, &quot;RequiredQuantity&quot; ) .union( df.select( &quot;Component&quot;, F.lit(None), F.lit(None), F.lit(None), F.lit(None), ) ) .distinct() ) graph = GraphFrame(nodes, edges) @F.udf(T.DoubleType()) def calculate_quantity(*edges: list[dict]) -&gt; float: result = edges[0][&quot;RequiredQuantity&quot;] for e in edges[1:]: result *= e[&quot;RequiredQuantity&quot;] / e[&quot;BatchSize&quot;] return result results = spark.createDataFrame([], df.schema) i = 1 while True: query = &quot;;&quot;.join(f&quot;(v{j})-[e{j}]-&gt;(v{j+1})&quot; for j in range(i)) tmp = graph.find(query) if tmp.isEmpty(): break results = results.union( tmp.select( F.col(&quot;v0&quot;)[&quot;id&quot;], F.col(f&quot;v{i}&quot;)[&quot;id&quot;], F.col(&quot;e0&quot;)[&quot;BatchSize&quot;], calculate_quantity(*(col for col in tmp.columns if col.startswith(&quot;e&quot;))), ) ) i += 1 This only took a little over 7 minutes to run for all ~5000 materials. FYI: If you're doing this in a notebook in Fabric like I am, you'll need to add these at the top (or create an environment with these included): %%configure -f { &quot;conf&quot;: { &quot;spark.jars.packages&quot;: &quot;graphframes:graphframes:0.8.4-spark3.5-s_2.12&quot; } } %pip install graphframes-py",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "pyspark"],
+      "question_score": 1,
+      "answer_score": 0,
+      "created": "2025-05-29T14:36:17",
+      "question_id": 79644095,
+      "answer_id": 79644667
+    }
+  },
+  {
+    "question": "Text aligned below each 3d bar in matplotlib",
+    "expected_answer": "Adjust the offset (-0.05) to better position the text. Snippet: ax.text(x, y, z - 0.05, # you can adjust as needed label_point, size=10, ha=&quot;center&quot;, va='top', zdir='z', color=datalabels_color)",
+    "context_chunks": [
+      {
+        "text": "Adios Gringo, following your help, I managed to put it like this: ax.text(xs[i * nr_status] + 100, ys[i * nr_status] - 50, z=35, zdir=(0, 1, 1), ha='right', va='top', s=f&quot;{dp}&quot;, color=xy_ticklabel_color, weight=&quot;bold&quot;, fontsize=7) screenshot of a 3d bar chart showing text and bars",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "I want to position each text below each bar diagonally, because, as you can see in the image, some texts are far from the bars or inside the bars. I need to align the text diagonally with each of the bars Only the text 'hd_aaaa_DD1-MMMM-01' is the way I want it, so I need all the other texts to be the same way. screenshot of a 3d bar chart showing inconsistent spacing between text and bars import matplotlib.pyplot as plt from matplotlib.lines import Line2D import numpy as np import pandas as pd color_dict = {'used': '#A54836', 'free': '#5375D4'} xy_ticklabel_color, xlabel_color, grand_totals_color, legend_color, grid_color, datalabels_color = '#101628',&quot;#101628&quot;,&quot;#101628&quot;,&quot;#101628&quot;, &quot;#C8C9C9&quot;, &quot;#757C85&quot; df = pd.DataFrame([ ['hd_xxxxxx-ppp-d2', 355, 237, 592], ['hd_disk_vvvvvvvv', 0, 184, 184], ['hd_aaaa-C_DDDDDDDDDDD', 0, 240, 240], ['hd_AAAAAAA_DDDDDDDDDDD', 1, 9, 10], ['hd_xxxxxx-ppp-d1', 870, 342, 1212], ['hd_aaaa_CC2-SSSS-01', 0, 9, 9], ['hd_aaaa_DD1-MMMM-01', 387, 286, 673], ['hd_wwww_DD2-MMMM-01', 437, 230, 667], ['hd_disk_bbbbbbbbbb', 0, 179, 179], ]) df.columns = ['disk_pool_name', 'used_space_kb', 'free_space_kb', 'total_capacity'] used = df[['disk_pool_name', 'used_space_kb']].rename(columns={&quot;used_space_kb&quot;: &quot;TB&quot;}) used['status'] = 'used' free = df[['disk_pool_name', 'free_space_kb']].rename(columns={&quot;free_space_kb&quot;: &quot;TB&quot;}) free['status'] = 'free' teste = pd.concat([used, free], axis=0, ignore_index=True, sort=False) teste = teste.sort_values(['disk_pool_name', 'status'], ascending=[True, False]) # map colors teste['colors']= teste.status.map(color_dict) dp_names = teste.disk_pool_name.unique() status = ['used', 'free'] nr_status = len(status) sub_totals = df.sort_values(['disk_pool_name'])['total_capacity'] colors = teste.colors dx = 100 dy = 100 dz = teste.TB.to_list() xs_separation = 250 ys_separation = 125 xs = np.repeat(np.arange(0, len(dp_names)) * xs_separation,len(status)).tolist() ys = np.repeat(np.arange(0, len(dp_names)) * ys_separation,len(status)).tolist() zs = np.array(teste.groupby('disk_pool_name', sort=False).TB.apply(list).tolist()) #convert to a numpy 2d array zs = np.cumsum(zs, axis=1)[:,:nr_status-1] #accumulate sum, remove last item zs = np.insert(zs, 0, 0, axis=1).flatten().tolist() fig = plt.figure(figsize=(10, 8)) ax = fig.add_subplot(1, 1, 1, projection='3d') ax.bar3d(xs, ys, zs, dx, dy, dz, color=colors, label=status) for x, y, z, zdir in zip(xs, ys, zs, dz): label_point = zdir if zdir &gt; 0 else '' ax.text(x - 1.5, y, z + zdir / 2, label_point, size=10, ha=&quot;right&quot;, color=datalabels_color) lines = [Line2D([0], [0], color=c, marker='s',linestyle='', markersize=10,) for c in reversed(colors.unique())] labels = teste.status.unique() plt.legend(lines, reversed(labels), labelcolor=legend_color, prop=dict(weight='bold', size=12), bbox_to_anchor=(0.5, -0.05), loc=&quot;lower center&quot;, ncols=2,frameon=False, fontsize=14) for i, (dp, sub_total) in enumerate(zip(dp_names, sub_totals)): ax.text(xs[i * nr_status] - 100, ys[i * nr_status] - 710, z=-200, zdir='y', s=f&quot;{dp}&quot;, color=xy_ticklabel_color, weight=&quot;bold&quot;, fontsize=7) ax.text(xs[i * nr_status] - 130, ys[i * nr_status] + 260, z=zs[i * nr_status] + sub_total + 2, s=f&quot;{sub_total}&quot;, fontsize=10, weight=&quot;bold&quot;, color=grand_totals_color, bbox=dict(facecolor='none', edgecolor='#EBEDEE', boxstyle='round,pad=0.3')) ax.set_aspect(&quot;equal&quot;) I tried to make changes with the zdir parameter, but I can't get each of the texts below each of the bars so that they are diagonal and close to the bars.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "Adjust the offset (-0.05) to better position the text. Snippet: ax.text(x, y, z - 0.05, # you can adjust as needed label_point, size=10, ha=&quot;center&quot;, va='top', zdir='z', color=datalabels_color)",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "matplotlib", "bar3d"],
+      "question_score": 1,
+      "answer_score": 1,
+      "created": "2025-05-29T14:16:36",
+      "question_id": 79644054,
+      "answer_id": 79644136
+    }
+  },
+  {
+    "question": "Smooth curve through points with prepar1d",
+    "expected_answer": "I think there are two issues: The first is that a pure interpolation requires to match all support points exactly. Maybe you do not want that. The second issue is that your data has logarithmic character, and it is difficult for the algorithms to cope with the change in magnitudes in particular on the time values. I used scipy.interpolate.make_smoothing_spline to fit your data. To see it better, I changed the plot to a log-x scale. import numpy as np import matplotlib.pyplot as plt from scipy.interpolate import make_smoothing_spline time = [0.1, 0.5, 1, 5, 10, 50, 100, 250, 500, 1000, 2500, 5000] intensity = [2722.164194, 2877.627742, 2663.520645, 2708.928125, 2545.461613, 2421.236129, 1885.837742, 1710.483871, 1275.428387, 776.0895806, 192.4806452, 26.35279] fig, ax = plt.subplots() ax.semilogx(time, intensity, &quot;.&quot;) x2 = np.logspace(start=-1, stop=4, num=100) for lam in (0, 1, 10, 100): smooth_func = make_smoothing_spline(np.log(time), intensity, lam=lam) y2 = smooth_func(np.log(x2)) ax.semilogx(x2, y2, label=rf&quot;$\\lambda = {lam}$&quot;) ax.set_ylim([0, None]) ax.set_xlabel(&quot;Trapping time (ms)&quot;) ax.legend(loc=&quot;best&quot;) ax.set_ylabel(&quot;Average Intensity (counts/s)&quot;) plt.show() As you see, you can now chose the trade-off between matching every point and obtaining a smooth line via the lam parameter. Probably you'd prefer a value of 1 to 10 in your case. As a parameter to the function, I chose np.log(time) instead of time.",
+    "context_chunks": [
+      {
+        "text": "I am trying to get a smooth curve through the data points, but the curve is not smooth and it just connects the scatter points with a straight line or it shows weird bumps in the area between the points, how can I smooth this curve? import numpy as np import pandas as pd from matplotlib import pyplot as plt import matplotlib.pyplot as plt from matplotlib.ticker import (MultipleLocator, AutoMinorLocator) from numpy.polynomial.polynomial import Polynomial from scipy.interpolate import BSpline from scipy.interpolate import interp1d Time=[0.1,0.5,1,5,10,50,100,250,500,1000,2500,5000] Intensity=[2722.164194,2877.627742,2663.520645,2708.928125,2545.461613,2421.236129,1885.837742,1710.483871,1275.428387,776.0895806,192.4806452,26.35279] fun = interp1d(x=Time, y=Intensity, kind=2,bounds_error=False) x2 = np.linspace(start=-0.1, stop=5000, num=100000) y2 = fun(x2) fig, ax = plt.subplots() ax.scatter(Time, Intensity) ax.plot(x2,y2, color=&quot;r&quot;) ax.xaxis.set_major_locator(MultipleLocator(500)) ax.xaxis.set_minor_locator(MultipleLocator(100)) ax.yaxis.set_major_locator(MultipleLocator(500)) ax.yaxis.set_minor_locator(MultipleLocator(100)) ax.set_xlabel(&quot;Trapping time (ms)&quot;) ax.set_ylabel(&quot;Average Intensity (counts/s)&quot;) Picure",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "I think there are two issues: The first is that a pure interpolation requires to match all support points exactly. Maybe you do not want that. The second issue is that your data has logarithmic character, and it is difficult for the algorithms to cope with the change in magnitudes in particular on the time values. I used scipy.interpolate.make_smoothing_spline to fit your data. To see it better, I changed the plot to a log-x scale. import numpy as np import matplotlib.pyplot as plt from scipy.interpolate import make_smoothing_spline time = [0.1, 0.5, 1, 5, 10, 50, 100, 250, 500, 1000, 2500, 5000] intensity = [2722.164194, 2877.627742, 2663.520645, 2708.928125, 2545.461613, 2421.236129, 1885.837742, 1710.483871, 1275.428387, 776.0895806, 192.4806452, 26.35279] fig, ax = plt.subplots() ax.semilogx(time, intensity, &quot;.&quot;) x2 = np.logspace(start=-1, stop=4, num=100) for lam in (0, 1, 10, 100): smooth_func = make_smoothing_spline(np.log(time), intensity, lam=lam) y2 = smooth_func(np.log(x2)) ax.semilogx(x2, y2, label=rf&quot;$\\lambda = {lam}$&quot;) ax.set_ylim([0, None]) ax.set_xlabel(&quot;Trapping time (ms)&quot;) ax.legend(loc=&quot;best&quot;) ax.set_ylabel(&quot;Average Intensity (counts/s)&quot;) plt.show() As you see, you can now chose the trade-off between matching every point and obtaining a smooth line via the lam parameter. Probably you'd prefer a value of 1 to 10 in your case. As a parameter to the function, I chose np.log(time) instead of time.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "scipy", "curve-fitting"],
+      "question_score": 0,
+      "answer_score": 2,
+      "created": "2025-05-29T14:06:26",
+      "question_id": 79644037,
+      "answer_id": 79644161
+    }
+  },
+  {
+    "question": "How to check it an object is an instance of dict_itemiterator in python?",
+    "expected_answer": "It isn't exposed anywhere, what you are doing is a reasonable approach. Check out how the Python standard library does this for some otherwise unexposed built-in types that are exposed in the types module: def _g(): yield 1 GeneratorType = type(_g())",
+    "context_chunks": [
+      {
+        "text": "I have a some library that is returning dict_itemiterator object. Since I'm working with multiple types of objects I need to know what is actual type of my object. So I found that it is possible to get dict_itemiterator using this code: # of course, not me creating this object in real code, it comes # from 3rd-party library, I just added it to make a reproducible example my_tricky_object = iter({}.items()) dict_itemiterator_type = type(iter({}.items())) if isinstance(my_tricky_object, dict_itemiterator_type): print('Do stuff here...') The problem is I don't know how to import this dict_itemiterator type without using this ambiguous construction: type(iter({}.items())) Of course it is possible to use Iterable: from typing import Iterable isinstance(my_tricky_object, Iterable) But I'm working with different iterable types and want to be sure that my_tricky_object is an instance of a specifically key/value iterator The question is what is most correct isinstance check here or how to import exactly dict_itemiterator type?",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "It isn't exposed anywhere, what you are doing is a reasonable approach. Check out how the Python standard library does this for some otherwise unexposed built-in types that are exposed in the types module: def _g(): yield 1 GeneratorType = type(_g())",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python"],
+      "question_score": 0,
+      "answer_score": 2,
+      "created": "2025-05-29T13:29:55",
+      "question_id": 79643973,
+      "answer_id": 79644171
+    }
+  },
+  {
+    "question": "How can I remove duplicate assets by serial number using Python?",
+    "expected_answer": "You can do this using pandas import pandas as pd df = pd.read_csv('data.csv') #load csv df = df.drop_duplicates(subset=['serial_number']) #remove duplicates based on column df.to_csv('out.csv', index=False) #output to csv References: pandas.read_csv pandas.DataFrame.drop_duplicates pandas.DataFrame.to_csv",
+    "context_chunks": [
+      {
+        "text": "I'm cleaning up a basic asset inventory stored in a CSV file. Some rows are duplicates (same serial number). I want to keep only one entry per serial number. name,serial_number,location Laptop A,12345,NY Laptop A,12345,SF How can I remove the duplicates using Python?",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "You can do this using pandas import pandas as pd df = pd.read_csv('data.csv') #load csv df = df.drop_duplicates(subset=['serial_number']) #remove duplicates based on column df.to_csv('out.csv', index=False) #output to csv References: pandas.read_csv pandas.DataFrame.drop_duplicates pandas.DataFrame.to_csv",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": ["python", "csv"],
+      "question_score": -6,
+      "answer_score": 0,
+      "created": "2025-05-29T08:10:50",
+      "question_id": 79643540,
+      "answer_id": 79643560
+    }
+  },
+  {
+    "question": "How do I install SSL for python 3.13+ in a AWS EC2 instance?",
+    "expected_answer": "Turns out the SSL is caused by not assigning the correct path to the python3.13. The installation itself doesn't have a problem. The problem is that the path was not updated after the installation was done. When I use &quot;/usr/local/bin/python3.13&quot; directly instead of using python3.13, the SSL works. I assume that the wrong path was assigned to &quot;python3.13&quot; command on installation process. I later modified the .bashrc file to include the path, which solved the problem.",
+    "context_chunks": [
+      {
+        "text": "I am currently trying to install python 3.13+ in my AWS EC2 instance. It seems that it has python 3.9 installed by default, and ChatGPT said that EC2 is running based on Python so I cannot remove the originally installed version. And now I am trying to run a python application that is based on python 3.13, which requires me to install a new python and run it on that. I wonder how I can achieve this. I now have the Python 3.13 installed but it does not have the SSL settled. On the other hand, Python 3.9 (the default version) is having a functional SSL working for it. [ec2-user@ip-172-31-6-102 cpython]$ python3.13 -c &quot;import ssl; print(ssl.OPENSSL_VERSION)&quot; Traceback (most recent call last): File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt; import ssl; print(ssl.OPENSSL_VERSION) ^^^^^^^^^^ File &quot;/usr/local/lib/python3.13/ssl.py&quot;, line 100, in &lt;module&gt; import _ssl # if we can't import it, let the error propagate ^^^^^^^^^^^ ModuleNotFoundError: No module named '_ssl' Now I am confused and the AI isn't helping. So I am posting a question here to see if anyone has encountered something similar before. PS. I have seen this question but it doesn't help. I have a python 3.9 installed already, I just need to have a higher version of it.",
+        "contains_answer": false,
+        "score": 0.3,
+        "source": "stackoverflow_question"
+      },
+      {
+        "text": "Turns out the SSL is caused by not assigning the correct path to the python3.13. The installation itself doesn't have a problem. The problem is that the path was not updated after the installation was done. When I use &quot;/usr/local/bin/python3.13&quot; directly instead of using python3.13, the SSL works. I assume that the wrong path was assigned to &quot;python3.13&quot; command on installation process. I later modified the .bashrc file to include the path, which solved the problem.",
+        "contains_answer": true,
+        "score": 1.0,
+        "source": "stackoverflow"
+      },
+      {
+        "text": "You can always install a specific version of Python on a Unix or Unix-like system from the official source distribution. Simply, you will only get the features (tk, SSL, etc.) for which the dev librairies are installed. Said differently, your problem is not directly on the installation of Python but on getting a development installation of SSL (header files and dev. libraries). Once you have that, building Python 3.13 will be a piece of cake.",
+        "contains_answer": false,
+        "score": 0.1,
+        "source": "stackoverflow"
+      }
+    ],
+    "metadata": {
+      "tags": [
+        "python",
+        "python-3.x",
+        "amazon-web-services",
+        "amazon-ec2",
+        "openssl"
+      ],
+      "question_score": -7,
+      "answer_score": 0,
+      "created": "2025-05-29T07:34:26",
+      "question_id": 79643480,
+      "answer_id": 79643946
+    }
+  }
+]

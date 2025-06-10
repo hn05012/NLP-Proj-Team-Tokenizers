@@ -1,0 +1,352 @@
+model                 , question                                                                                              , hit@1, hit@3, hit@5, mrr   , latency_ms, memory_mb
+BAAI/bge-small-en-v1.5, "VSCode Python extension loading forever, saying “Reactivating terminals”"                            ,     0,     1,     1, 0.5   ,     518.93,    1821.6
+BAAI/bge-small-en-v1.5, "UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown plt.show()"                ,     0,     1,     1, 0.5   ,      75.33,    1829.0
+BAAI/bge-small-en-v1.5, "numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 fro",     0,     1,     1, 0.5   ,      62.94,    1829.0
+BAAI/bge-small-en-v1.5, "pandas FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and w",     0,     1,     1, 0.5   ,      58.44,    1829.3
+BAAI/bge-small-en-v1.5, &quot;cannot import name &#39;DEFAULT_CIPHERS&#39; from &#39;urllib3.util.ssl_&#39;&quot; on AWS Lam  ,     1,     1,     1, 1.0   ,      63.34,    1829.4
+BAAI/bge-small-en-v1.5, AttributeError: module &#39;pkgutil&#39; has no attribute &#39;ImpImporter&#39;. Did you mean: &#39;  ,     1,     1,     1, 1.0   ,      64.44,    1830.1
+BAAI/bge-small-en-v1.5, AttributeError: module &#39;PIL.Image&#39; has no attribute &#39;ANTIALIAS&#39;                       ,     0,     1,     1, 0.5   ,      33.62,    1830.1
+BAAI/bge-small-en-v1.5, Logging Error: Failed to initialize logging system. Log messages may be missing.?                     ,     0,     1,     1, 0.5   ,      27.48,    1830.1
+BAAI/bge-small-en-v1.5, Why did Flask start failing with &quot;ImportError: cannot import name &#39;url_quote&#39; from &#39  ,     0,     1,     1, 0.5   ,      45.24,    1830.1
+BAAI/bge-small-en-v1.5, How can I migrate from Poetry to UV package manager?                                                  ,     0,     1,     1, 0.5   ,      45.97,    1830.3
+BAAI/bge-small-en-v1.5, Why did I get an error ModuleNotFoundError: No module named &#39;distutils&#39;?                      ,     0,     1,     1, 0.3333,      28.52,    1830.3
+BAAI/bge-small-en-v1.5, "Alternative to .concat() of empty dataframe, now that it is being deprecated?"                       ,     1,     1,     1, 1.0   ,      34.48,    1830.4
+BAAI/bge-small-en-v1.5, OpenAI Python Package Error: &#39;ChatCompletion&#39; object is not subscriptable                     ,     0,     1,     1, 0.3333,      43.13,    1830.4
+BAAI/bge-small-en-v1.5, Why list comprehensions create a function internally?                                                 ,     0,     1,     1, 0.5   ,      42.58,    1830.5
+BAAI/bge-small-en-v1.5, TypeError: WebDriver.__init__() got an unexpected keyword argument &#39;executable_path&#39; in Sele  ,     0,     1,     1, 0.5   ,      27.02,    1830.5
+BAAI/bge-small-en-v1.5, Deprecation Warning with groupby.apply                                                                ,     0,     1,     1, 0.5   ,      42.99,    1830.8
+BAAI/bge-small-en-v1.5, &quot;ImportError: cannot import name &#39;triu&#39; from &#39;scipy.linalg&#39;&quot; when importin  ,     0,     1,     1, 0.5   ,      43.18,    1830.8
+BAAI/bge-small-en-v1.5, How to configure FastAPI logging so that it works both with Uvicorn locally and in production?        ,     0,     1,     1, 0.5   ,      52.74,    1832.3
+BAAI/bge-small-en-v1.5, How to invoke Github Copilot programmatically?                                                        ,     0,     1,     1, 0.3333,      48.12,    1832.9
+BAAI/bge-small-en-v1.5, Solve conda-libmamba-solver (libarchive.so.19) error after updating conda to 23.11.0 without reinsta  ,     0,     1,     1, 0.3333,      43.89,    1832.9
+BAAI/bge-small-en-v1.5, langchain : ModuleNotFoundError: No module named &#39;langchain_community&#39;                        ,     0,     1,     1, 0.3333,      27.24,    1832.9
+BAAI/bge-small-en-v1.5, pip install RandomWords: &quot;No module named &#39;setuptools.command.test&#39;&quot;                ,     0,     1,     1, 0.3333,      30.39,    1832.9
+BAAI/bge-small-en-v1.5, Only the first row of annotations displayed on seaborn heatmap                                        ,     0,     1,     1, 0.5   ,      29.65,    1832.9
+BAAI/bge-small-en-v1.5, Theoretically can the Ackermann function be optimized?                                                ,     0,     1,     1, 0.3333,      51.48,    1833.3
+BAAI/bge-small-en-v1.5, How can I process a pdf using OpenAI&#39;s APIs (GPTs)?                                               ,     0,     1,     1, 0.5   ,      47.98,    1833.3
+BAAI/bge-small-en-v1.5, Docker Alpine build fails on mysqlclient installation with error: Exception: Can not find valid pkg-  ,     0,     1,     1, 0.5   ,      38.69,    1833.3
+BAAI/bge-small-en-v1.5, selenium.common.exceptions.SessionNotCreatedException: This version of ChromeDriver only supports Ch  ,     0,     1,     1, 0.3333,      33.23,    1833.3
+BAAI/bge-small-en-v1.5, Selecting default search engine is needed for Chrome version 127                                      ,     0,     1,     1, 0.5   ,      26.85,    1833.3
+BAAI/bge-small-en-v1.5, Selenium WebDriver Chrome 115 stopped working                                                         ,     0,     1,     1, 0.3333,      50.16,    1833.3
+BAAI/bge-small-en-v1.5, Why is builtin sorted() slower for a list containing descending numbers if each number appears twice  ,     1,     1,     1, 1.0   ,      48.89,    1833.3
+BAAI/bge-small-en-v1.5, How to create a langchain doc from an str?                                                            ,     0,     1,     1, 0.5   ,      42.72,    1833.3
+BAAI/bge-small-en-v1.5, TypeError: WebDriver.__init__() got multiple values for argument &#39;options&#39;                    ,     0,     1,     1, 0.5   ,      33.09,    1833.3
+BAAI/bge-small-en-v1.5, &#39;super&#39; object has no attribute &#39;__sklearn_tags__&#39;                                    ,     0,     1,     1, 0.3333,      27.85,    1833.3
+BAAI/bge-small-en-v1.5, SSL: CERTIFICATE_VERIFY_FAILED certificate verify failed: unable to get local issuer certificate (_s  ,     0,     1,     1, 0.5   ,      27.56,    1833.3
+BAAI/bge-small-en-v1.5, MultiQC: ModuleNotFoundError: No module named &#39;imp&#39;                                           ,     0,     1,     1, 0.3333,      26.25,    1833.3
+BAAI/bge-small-en-v1.5, A module that was compiled using NumPy 1.x cannot be run in NumPy 2.0.0 as it may crash               ,     1,     1,     1, 1.0   ,      42.16,    1833.3
+BAAI/bge-small-en-v1.5, How can i solve ImportError: Using the `Trainer` with `PyTorch` requires `accelerate&gt;=0.20.1` whe  ,     0,     1,     1, 0.5   ,      43.72,    1833.3
+BAAI/bge-small-en-v1.5, "Why is &quot;dict[int, int]&quot; incompatible with &quot;dict[int, int | str]&quot;?"               ,     0,     1,     1, 0.5   ,      42.33,    1833.3
+BAAI/bge-small-en-v1.5, NotImplementedError: Loading a dataset cached in a LocalFileSystem is not supported                   ,     0,     1,     1, 0.3333,      43.16,    1833.3
+BAAI/bge-small-en-v1.5, Import vaex error: PydanticImportError: `BaseSettings` has been moved to the `pydantic-settings` pac  ,     0,     1,     1, 0.5   ,      26.36,    1833.3
+BAAI/bge-small-en-v1.5, .corr results in ValueError: could not convert string to float                                        ,     0,     1,     1, 0.3333,      40.53,    1833.3
+BAAI/bge-small-en-v1.5, Python zip magic for classes instead of tuples                                                        ,     0,     1,     1, 0.5   ,      31.0 ,    1833.3
+BAAI/bge-small-en-v1.5, PydanticUserError: If you use `@root_validator` with pre=False (the default) you MUST specify `skip_  ,     0,     1,     1, 0.3333,      41.91,    1833.3
+BAAI/bge-small-en-v1.5, A module that was compiled using NumPy 1.x cannot be run in NumPy 2.0.0                               ,     0,     1,     1, 0.3333,      47.03,    1833.3
+BAAI/bge-small-en-v1.5, Unable to use Selenium Webdriver. Getting two exceptions                                              ,     1,     1,     1, 1.0   ,      40.74,    1833.3
+BAAI/bge-small-en-v1.5, Accelerate and bitsandbytes is needed to install but I did                                            ,     0,     1,     1, 0.3333,      28.25,    1833.3
+BAAI/bge-small-en-v1.5, streamlit: Your system has an unsupported version of sqlite3. Chroma requires sqlite3 &gt;= 3.35.0    ,     0,     1,     1, 0.5   ,      36.65,    1833.3
+BAAI/bge-small-en-v1.5, ModuleNotFoundError: No module named &#39;imp&#39;                                                    ,     1,     1,     1, 1.0   ,      41.87,    1833.3
+BAAI/bge-small-en-v1.5, Warning while using tensorflow : tensorflow/core/util/port.cc:113] oneDNN custom operations are on    ,     0,     1,     1, 0.3333,      31.46,    1833.3
+BAAI/bge-small-en-v1.5, How do I install Python dev-dependencies using uv?                                                    ,     0,     1,     1, 0.5   ,      42.56,    1833.3
+BAAI/bge-small-en-v1.5, Python does not find module installed with pipx                                                       ,     0,     1,     1, 0.3333,      35.98,    1833.3
+BAAI/bge-small-en-v1.5, Django built in Logout view `Method Not Allowed (GET): /users/logout/`                                ,     0,     1,     1, 0.5   ,      38.28,    1833.3
+BAAI/bge-small-en-v1.5, "OpenAI API error: &quot;You tried to access openai.ChatCompletion, but this is no longer supported i",     0,     1,     1, 0.5   ,      45.13,    1833.3
+BAAI/bge-small-en-v1.5, Why does llama-index still require an OpenAI key when using Hugging Face local embedding model?       ,     0,     1,     1, 0.5   ,      53.4 ,    1833.4
+BAAI/bge-small-en-v1.5, Pandas 2.1.0 FutureWarning: Series.__getitem__ treating keys as positions is deprecated               ,     0,     1,     1, 0.5   ,      51.2 ,    1833.4
+BAAI/bge-small-en-v1.5, There is no such driver by URL https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115.0.5790  ,     0,     1,     1, 0.3333,      28.78,    1833.4
+BAAI/bge-small-en-v1.5, Paho MQTT &quot;Unsupported callback API version&quot; error                                          ,     0,     1,     1, 0.5   ,      37.86,    1833.4
+BAAI/bge-small-en-v1.5, What does langchain CharacterTextSplitter&#39;s chunk_size param even do?                             ,     0,     1,     1, 0.5   ,      37.84,    1833.4
+BAAI/bge-small-en-v1.5, No module named &#39;pydantic_core._pydantic_core&#39; in AWS Lambda though library is installed for  ,     0,     1,     1, 0.5   ,      27.35,    1833.4
+BAAI/bge-small-en-v1.5, Visual Studio Code terminal shows multiple Conda envs                                                 ,     0,     1,     1, 0.3333,      27.5 ,    1833.4
+BAAI/bge-small-en-v1.5, How do I get rid of the annoying terminal warning when using Gemini API?                              ,     0,     1,     1, 0.3333,      33.49,    1833.4
+BAAI/bge-small-en-v1.5, THIRD_PARTY_NOTICES.chromedriver - Exec format error - undetected_chromedriver                        ,     0,     1,     1, 0.5   ,      37.77,    1833.4
+BAAI/bge-small-en-v1.5, Python Regex to match the FIRST repetition of a digit                                                 ,     0,     1,     1, 0.5   ,      31.52,    1833.4
+BAAI/bge-small-en-v1.5, Python type hints for type promotion                                                                  ,     0,     1,     1, 0.5   ,      36.02,    1833.4
+BAAI/bge-small-en-v1.5, Ruff does not autofix line-too-long violation                                                         ,     0,     1,     1, 0.5   ,      44.03,    1833.4
+BAAI/bge-small-en-v1.5, ImportError: cannot import name &#39;deprecated&#39; from &#39;typing_extensions&#39;                 ,     0,     1,     1, 0.5   ,      44.11,    1833.4
+BAAI/bge-small-en-v1.5, How can I select the proper openai.api_version?                                                       ,     0,     1,     1, 0.3333,      44.3 ,    1833.4
+BAAI/bge-small-en-v1.5, ModuleNotFoundError: No module named &#39;jupyter_server.contents&#39;                                ,     0,     1,     1, 0.3333,      43.93,    1833.4
+BAAI/bge-small-en-v1.5, How to find Base-line of Curved Text?                                                                 ,     0,     1,     1, 0.5   ,      55.09,    1834.1
+BAAI/bge-small-en-v1.5, pandas or Polars: find index of previous element larger than current one                              ,     0,     1,     1, 0.5   ,      44.58,    1834.1
+BAAI/bge-small-en-v1.5, In Python is there a way to get the code object of top level code?                                    ,     0,     1,     1, 0.5   ,      44.43,    1834.1
+BAAI/bge-small-en-v1.5, How to load a fine-tuned peft/lora model based on llama with Huggingface transformers?                ,     1,     1,     1, 1.0   ,      45.16,    1834.1
+BAAI/bge-small-en-v1.5, How to stop numpy floats being displayed as &quot;np.float64&quot;?                                   ,     0,     1,     1, 0.5   ,      28.68,    1834.1
+BAAI/bge-small-en-v1.5, How to solve HTTP Error 400: Bad Request in PyTube?                                                   ,     0,     1,     1, 0.3333,      31.2 ,    1834.1
+BAAI/bge-small-en-v1.5, Sort imports alphabetically with ruff                                                                 ,     0,     1,     1, 0.5   ,      26.52,    1834.1
+BAAI/bge-small-en-v1.5, ImportError: cannot import name &#39;VectorStoreIndex&#39; from &#39;llama_index&#39; (unknown locat  ,     0,     1,     1, 0.5   ,      27.38,    1834.1
+BAAI/bge-small-en-v1.5, ImportError: cannot import name &#39;url_decode&#39; from &#39;werkzeug.urls&#39;                     ,     0,     1,     1, 0.5   ,      47.97,    1834.1
+BAAI/bge-small-en-v1.5, Efficiently using Hugging Face transformers pipelines on GPU with large datasets                      ,     1,     1,     1, 1.0   ,      44.03,    1834.1
+BAAI/bge-small-en-v1.5, Why do f-strings require parentheses around assignment expressions?                                   ,     0,     1,     1, 0.5   ,      32.99,    1834.1
+BAAI/bge-small-en-v1.5, How to maximize the cache hit rate of the 2-element combinations?                                     ,     0,     1,     1, 0.5   ,      54.72,    1835.4
+BAAI/bge-small-en-v1.5, Getting TypeError: WebDriver.__init__() got an unexpected keyword argument ‘desired_capabilities’ wh  ,     0,     1,     1, 0.5   ,      37.89,    1835.4
+BAAI/bge-small-en-v1.5, Error while installing python package: llama-cpp-python                                               ,     0,     1,     1, 0.5   ,      42.0 ,    1835.4
+BAAI/bge-small-en-v1.5, How to run ollama in google colab?                                                                    ,     1,     1,     1, 1.0   ,      53.78,    1835.4
+BAAI/bge-small-en-v1.5, "Python 3.12 SyntaxWarning: invalid escape sequence on triple-quoted string, `\d` must be `\\d`"      ,     0,     1,     1, 0.5   ,      39.26,    1835.4
+BAAI/bge-small-en-v1.5, ModuleNotFoundError: No module named &#39;kafka.vendor.six.moves&#39; in Dockerized Django Applicati  ,     0,     1,     1, 0.5   ,      50.64,    1835.4
+BAAI/bge-small-en-v1.5, "OpenAI API error: &quot;You tried to access openai.Completion, but this is no longer supported in op",     1,     1,     1, 1.0   ,      51.18,    1835.4
+BAAI/bge-small-en-v1.5, What is the new way to declare Mongo ObjectId with PyDantic v2.0^?                                    ,     0,     1,     1, 0.5   ,      45.13,    1835.4
+BAAI/bge-small-en-v1.5, Why is Visual Studio Code saying my code in unreachable after using the Pandas concat function?       ,     0,     1,     1, 0.3333,      30.66,    1835.4
+BAAI/bge-small-en-v1.5, Installing mamba on a machine with conda                                                              ,     0,     1,     1, 0.3333,      29.77,    1835.4
+BAAI/bge-small-en-v1.5, Python pillow/PIL doesn&#39;t recognize the attribute &quot;textsize&quot; of the object &quot;image  ,     0,     1,     1, 0.3333,      41.23,    1835.4
+BAAI/bge-small-en-v1.5, How to run any quantized GGUF model on CPU for local inference?                                       ,     0,     1,     1, 0.5   ,      43.18,    1835.4
+BAAI/bge-small-en-v1.5, Install jupyter despite pin-1 not installable because it requires python 3.12                         ,     0,     1,     1, 0.5   ,      44.05,    1835.4
+BAAI/bge-small-en-v1.5, FBGEMM load error trying to use PyTorch on Windows                                                    ,     0,     1,     1, 0.3333,      28.86,    1835.4
+BAAI/bge-small-en-v1.5, Problems installing libraries via pip after installing Python 3.12                                    ,     0,     1,     1, 0.3333,      42.09,    1835.4
+BAAI/bge-small-en-v1.5, How can I suppress ruff linting on a block of code                                                    ,     0,     1,     1, 0.5   ,      27.07,    1835.4
+BAAI/bge-small-en-v1.5, session not created: This version of ChromeDriver only supports Chrome version 114                    ,     0,     1,     1, 0.3333,      43.88,    1835.5
+BAAI/bge-small-en-v1.5, import numpy failed after upgrading MacOS to 15.4                                                     ,     0,     1,     1, 0.3333,      47.06,    1835.5
+BAAI/bge-small-en-v1.5, Why do I keep getting this Tensorflow related message in Selenium errors?                             ,     0,     1,     1, 0.3333,      27.74,    1835.5
+BAAI/bge-small-en-v1.5, Using bson.ObjectId in Pydantic v2                                                                    ,     0,     1,     1, 0.5   ,      44.31,    1835.5
+BAAI/bge-small-en-v1.5, How to Resolve AttributeError: module &#39;fiona&#39; has no attribute &#39;path&#39;?                ,     0,     1,     1, 0.3333,      30.57,    1835.5
+BAAI/bge-small-en-v1.5, Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas        ,     0,     1,     1, 0.5   ,      29.28,    1835.5
+BAAI/bge-small-en-v1.5, Why do I need another pair of curly braces when using a variable in a format specifier in Python f-s  ,     0,     1,     1, 0.5   ,      52.69,    1835.5
+BAAI/bge-small-en-v1.5, Pydantic model fields with typing.Optional[] vs. typing.Optional[] = None                             ,     0,     1,     1, 0.5   ,      53.4 ,    1835.5
+BAAI/bge-small-en-v1.5, FutureWarning: Passing literal html to &#39;read_html&#39; is deprecated and will be removed in a fu  ,     0,     1,     1, 0.3333,      45.38,    1835.5
+BAAI/bge-small-en-v1.5, Cannot properly create a virtual enviroment in Python 3.12                                            ,     1,     1,     1, 1.0   ,      29.92,    1835.5
+BAAI/bge-small-en-v1.5, Solving incompatible dtype warning for pandas DataFrame when setting new column iteratively           ,     0,     1,     1, 0.3333,      45.1 ,    1835.5
+BAAI/bge-small-en-v1.5, "Python3 pickle: Expected type &#39;SupportsWrite[bytes]&#39;, got &#39;BinaryIO&#39; instead"        ,     0,     1,     1, 0.3333,      28.28,    1835.5
+BAAI/bge-small-en-v1.5, Finding solutions to linear system of equations with integer constraint in scipy                      ,     0,     1,     1, 0.3333,      56.7 ,    1835.5
+BAAI/bge-small-en-v1.5, Using Ruff Linter with Python in VS Code                                                              ,     0,     1,     1, 0.3333,      29.71,    1835.5
+BAAI/bge-small-en-v1.5, Processing requests in FastAPI sequentially while staying responsive                                  ,     0,     1,     1, 0.3333,      58.09,    1835.6
+BAAI/bge-small-en-v1.5, trying to setup docker for home server getting &#39;chunked&#39;                                      ,     0,     1,     1, 0.3333,      61.66,    1835.6
+BAAI/bge-small-en-v1.5, UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR               ,     0,     1,     1, 0.5   ,      45.51,    1835.6
+BAAI/bge-small-en-v1.5, "TypeError when chaining Runnables in LangChain: Expected a Runnable, callable or dict"               ,     0,     1,     1, 0.5   ,      45.02,    1835.6
+BAAI/bge-small-en-v1.5, "Inheriting str and enum, why is the output different?"                                               ,     1,     1,     1, 1.0   ,      30.96,    1835.6
+BAAI/bge-small-en-v1.5, ValueError: Invalid pattern: &#39;**&#39; can only be an entire path component                        ,     1,     1,     1, 1.0   ,      45.67,    1835.6
+BAAI/bge-small-en-v1.5, *win32ctypes.pywin32.pywintypes.error when using pyinstaller in VS Code - Possible Virus/Trojan?      ,     0,     1,     1, 0.5   ,      44.15,    1835.6
+BAAI/bge-small-en-v1.5, How to check the validity of the OpenAI key from python?                                              ,     0,     1,     1, 0.5   ,      30.99,    1835.6
+BAAI/bge-small-en-v1.5, Migrate PostgresDsn.build from pydentic v1 to pydantic v2                                             ,     0,     1,     1, 0.3333,      47.02,    1835.6
+BAAI/bge-small-en-v1.5, pendulum.tz.timezone(&quot;UTC&quot;) TypeError: &#39;module&#39; object is not callable              ,     1,     1,     1, 1.0   ,      52.35,    1835.6
+BAAI/bge-small-en-v1.5, Langchain: ModuleNotFoundError: No module named &#39;langchain&#39;                                   ,     0,     1,     1, 0.5   ,      43.09,    1835.6
+BAAI/bge-small-en-v1.5, llama-cpp-python not using NVIDIA GPU CUDA                                                            ,     0,     1,     1, 0.5   ,      43.09,    1835.6
+BAAI/bge-small-en-v1.5, How to update requirements.txt file using uv                                                          ,     1,     1,     1, 1.0   ,      29.97,    1835.6
+BAAI/bge-small-en-v1.5, unrecognized configuration parameter &quot;standard_conforming_strings&quot; while querying from Red  ,     0,     1,     1, 0.3333,      43.9 ,    1835.6
+BAAI/bge-small-en-v1.5, Django Allauth - ModuleNotFoundError: No module named &#39;allauth.account.middleware&#39; even when  ,     0,     1,     1, 0.5   ,      48.79,    1835.6
+BAAI/bge-small-en-v1.5, Error while loading shared libraries: libmpv.so.1: cannot open shared object file: No such file or d  ,     0,     1,     1, 0.5   ,      35.24,    1835.6
+BAAI/bge-small-en-v1.5, Pydantic BaseSettings cant find .env when running commands from different places                      ,     1,     1,     1, 1.0   ,      42.45,    1835.6
+BAAI/bge-small-en-v1.5, Is there a way to install pytorch on python 3.12.0?                                                   ,     0,     1,     1, 0.5   ,      27.75,    1835.6
+BAAI/bge-small-en-v1.5, How to generate rolling subsequences into a dataframe in Python                                       ,     0,     1,     1, 0.3333,      34.18,    1835.6
+BAAI/bge-small-en-v1.5, PEP 622 - can match statement be used as an expression?                                               ,     0,     1,     1, 0.5   ,      36.74,    1835.6
+BAAI/bge-small-en-v1.5, How exactly the forward and backward hooks work in PyTorch                                            ,     0,     1,     1, 0.3333,      43.43,    1835.6
+BAAI/bge-small-en-v1.5, How to get exact message sent to LLM using LangChain&#39;s LLMChain (python)?                         ,     0,     1,     1, 0.5   ,      31.48,    1835.6
+BAAI/bge-small-en-v1.5, Specify dependencies in pyproject.toml with install URL or with index-url                             ,     0,     1,     1, 0.5   ,      41.67,    1835.6
+BAAI/bge-small-en-v1.5, Use LLama 2 7B with python                                                                            ,     0,     1,     1, 0.5   ,      33.24,    1835.6
+BAAI/bge-small-en-v1.5, pkgutil.ImpImporter not found installing pyaudio on Python 3.12                                       ,     0,     1,     1, 0.5   ,      42.92,    1835.6
+BAAI/bge-small-en-v1.5, Generate teams of similar strengths with contiguous areas                                             ,     1,     1,     1, 1.0   ,      51.52,    1836.0
+BAAI/bge-small-en-v1.5, Cannot install mysqlclient on MacOS                                                                   ,     1,     1,     1, 1.0   ,      44.94,    1836.0
+BAAI/bge-small-en-v1.5, What&#39;s the polars equivalent to the pandas `.iloc` method?                                        ,     0,     1,     1, 0.5   ,      27.34,    1836.0
+BAAI/bge-small-en-v1.5, How to resolve `np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead error from  ,     0,     1,     1, 0.5   ,      41.97,    1836.0
+BAAI/bge-small-en-v1.5, What is the most efficient way to fillna multiple columns with values from other columns in a way th  ,     0,     1,     1, 0.3333,      42.67,    1836.0
+BAAI/bge-small-en-v1.5, VSCode Python: Error while enumerating installed packages                                             ,     0,     1,     1, 0.3333,      47.83,    1836.0
+BAAI/bge-small-en-v1.5, Topology-matching algorithm for finding 2D lattice in a 3D lattice                                    ,     1,     1,     1, 1.0   ,      50.95,    1836.8
+BAAI/bge-small-en-v1.5, How to solve RuntimeError: Couldn&#39;t find appropriate backend to handle uri in python              ,     0,     1,     1, 0.3333,      40.31,    1836.8
+BAAI/bge-small-en-v1.5, "AttributeError: Calling operator &quot;bpy.ops.import_scene.obj&quot; error, could not be found"     ,     1,     1,     1, 1.0   ,      42.2 ,    1836.8
+BAAI/bge-small-en-v1.5, TypeError: DataFrame.drop() takes from 1 to 2 positional arguments but 3 were given                   ,     0,     1,     1, 0.5   ,      26.88,    1836.8
+BAAI/bge-small-en-v1.5, How do I perform pandas cumsum while skipping rows that are duplicated in another field?              ,     0,     1,     1, 0.5   ,      41.38,    1836.8
+BAAI/bge-small-en-v1.5, tkinter extension was not compiled and GUI subsystem has been detected. Missing the Tk toolkit?       ,     0,     1,     1, 0.3333,      42.42,    1836.8
+BAAI/bge-small-en-v1.5, How to activate verbosity in Langchain                                                                ,     0,     1,     1, 0.3333,      40.22,    1836.8
+BAAI/bge-small-en-v1.5, What&#39;s the Raku equivalent of the super keyword as used in JavaScript and Python?                 ,     1,     1,     1, 1.0   ,      43.96,    1836.8
+BAAI/bge-small-en-v1.5, Performance results differ between run_in_threadpool() and run_in_executor() in FastAPI               ,     1,     1,     1, 1.0   ,      53.48,    1836.8
+BAAI/bge-small-en-v1.5, I got this error! OSError: [WinError 193] %1 is not a valid Win32 application                         ,     0,     1,     1, 0.3333,      43.76,    1836.8
+BAAI/bge-small-en-v1.5, How to use DataFrameMapper to delete rows with a null value in a specific column?                     ,     0,     1,     1, 0.3333,      27.91,    1836.8
+BAAI/bge-small-en-v1.5, Find the optimal clipped circle                                                                       ,     0,     1,     1, 0.3333,      42.34,    1836.8
+BAAI/bge-small-en-v1.5, How to find all grid points that correspond to non-reduced fractions in a square?                     ,     0,     1,     1, 0.3333,      46.42,    1836.8
+BAAI/bge-small-en-v1.5, Chrome 122 - How to allow insecure content? (Insecure download blocked)                               ,     0,     1,     1, 0.5   ,      33.58,    1836.8
+BAAI/bge-small-en-v1.5, Matplotlib - Seaborn-whitegrid is not a valid package style                                           ,     1,     1,     1, 1.0   ,      43.8 ,    1836.8
+BAAI/bge-small-en-v1.5, How to validate access token from AzureAD in python?                                                  ,     0,     1,     1, 0.5   ,      28.33,    1836.8
+BAAI/bge-small-en-v1.5, langchain_community &amp; langchain packages giving error: Missing 1 required keyword-only argument:  ,     0,     1,     1, 0.5   ,      48.32,    1836.8
+BAAI/bge-small-en-v1.5, Hydra: How to express None in config files?                                                           ,     0,     1,     1, 0.3333,      26.29,    1836.8
+BAAI/bge-small-en-v1.5, Is there a way to interpolate variables into a python string WITHOUT using the print function?        ,     0,     1,     1, 0.3333,      27.72,    1836.8
+BAAI/bge-small-en-v1.5, What datatype is considered &#39;list-like&#39; in Python?                                            ,     1,     1,     1, 1.0   ,      41.37,    1836.8
+BAAI/bge-small-en-v1.5, ERROR: Failed to build installable wheels for some pyproject.toml based projects (pycryptodome)       ,     0,     1,     1, 0.3333,      27.1 ,    1836.8
+BAAI/bge-small-en-v1.5, How to get maps in GeoPandas after datasets are removed?                                              ,     0,     1,     1, 0.5   ,      47.08,    1836.8
+BAAI/bge-small-en-v1.5, PyTorch UserWarning: Failed to initialize NumPy: _ARRAY_API not found and BERTModel weight initializ  ,     0,     1,     1, 0.5   ,      41.56,    1836.8
+BAAI/bge-small-en-v1.5, "ERROR: Could not build wheels for aiohttp, which is required to install pyproject.toml-based"        ,     1,     1,     1, 1.0   ,      43.21,    1836.8
+BAAI/bge-small-en-v1.5, "Split on regex (more than a character, maybe variable width) and keep the separator like GNU awk"    ,     0,     1,     1, 0.3333,      48.03,    1836.8
+BAAI/bge-small-en-v1.5, What is wrong with the function below for calculating simple moving average?                          ,     0,     1,     1, 0.3333,      27.68,    1836.8
+BAAI/bge-small-en-v1.5, "UserWarning: The figure layout has changed to tight self._figure.tight_layout(*args, **kwargs)"      ,     0,     1,     1, 0.5   ,      44.15,    1836.8
+BAAI/bge-small-en-v1.5, How to prevent error message when importing import cv2?                                               ,     0,     1,     1, 0.5   ,      26.31,    1836.8
+BAAI/bge-small-en-v1.5, How to use the new gpt-3.5-16k model with langchain?                                                  ,     0,     1,     1, 0.3333,      44.38,    1836.8
+BAAI/bge-small-en-v1.5, Why is black hole null geodesic not printing zero? Are my trajectories correct?                       ,     0,     1,     1, 0.5   ,      52.0 ,    1836.8
+BAAI/bge-small-en-v1.5, Dash &amp; polars; RAM-use keeps increasing                                                           ,     0,     1,     1, 0.3333,      52.32,    1836.8
+BAAI/bge-small-en-v1.5, Why is the code executed multiple times whenever Streamlit is started?                                ,     1,     1,     1, 1.0   ,      47.45,    1836.8
+BAAI/bge-small-en-v1.5, Difference between numpy power and ** for certain values                                              ,     0,     1,     1, 0.3333,      47.73,    1836.8
+BAAI/bge-small-en-v1.5, Python build error with Stable Diffusion repository: `ERROR: Could not find a version that satisfies  ,     0,     1,     1, 0.5   ,      45.76,    1836.8
+BAAI/bge-small-en-v1.5, How can I divide a list of electrical loads into 3 groups with near-equal total sum using Python?     ,     0,     1,     1, 0.3333,      47.83,    1836.8
+BAAI/bge-small-en-v1.5, Python request-html is not downloading Chromium                                                       ,     0,     1,     1, 0.5   ,      32.03,    1836.8
+BAAI/bge-small-en-v1.5, How to resolve &quot;cannot import name &#39;_MissingValues&#39; from &#39;sklearn.utils._param_vali  ,     0,     1,     1, 0.3333,      48.33,    1836.8
+BAAI/bge-small-en-v1.5, "import torch: How to fix OSError WinError 126, error loading fbgemm.dll or dependencies"             ,     0,     1,     1, 0.3333,      34.02,    1836.8
+BAAI/bge-small-en-v1.5, No module named &#39;keras.wrappers&#39;                                                              ,     0,     1,     1, 0.3333,      40.99,    1836.8
+BAAI/bge-small-en-v1.5, Reverse (flip) right-left(anti-)diagonals of a non-square numpy array                                 ,     0,     1,     1, 0.3333,      42.05,    1836.8
+BAAI/bge-small-en-v1.5, The following argument(s) are not supported with the native Keras format: [&#39;options&#39;]         ,     0,     1,     1, 0.5   ,      44.71,    1836.8
+BAAI/bge-small-en-v1.5, How to see the Embedding of the documents with Chroma (or any other DB) saved in Lang Chain?          ,     0,     1,     1, 0.3333,      42.95,    1836.8
+BAAI/bge-small-en-v1.5, Python: fastest way of checking if there are more than x files in a folder                            ,     0,     1,     1, 0.5   ,      46.36,    1836.8
+BAAI/bge-small-en-v1.5, How to plot polygons from categorical grid points in matplotlib? (phase-diagram generation)           ,     0,     1,     1, 0.5   ,      44.6 ,    1836.8
+BAAI/bge-small-en-v1.5, Surprising lack of speedup in caching numpy calculations                                              ,     0,     1,     1, 0.3333,      48.81,    1836.8
+BAAI/bge-small-en-v1.5, AttributeError: module &#39;numpy&#39; has no attribute &#39;long&#39;                                ,     0,     1,     1, 0.3333,      26.8 ,    1836.8
+BAAI/bge-small-en-v1.5, "ERROR: Could not build wheels for lxml, which is required to install pyproject.toml-based projects"  ,     1,     1,     1, 1.0   ,      27.7 ,    1836.8
+BAAI/bge-small-en-v1.5, Azure Functions: Can&#39;t open lib &#39;ODBC Driver 17 for SQL Server&#39;                           ,     1,     1,     1, 1.0   ,      53.68,    1836.8
+BAAI/bge-small-en-v1.5, how to convert a dict to a dataclass (reverse of asdict)?                                             ,     0,     1,     1, 0.3333,      32.25,    1836.8
+BAAI/bge-small-en-v1.5, Integrate Keycloak with FastAPI                                                                       ,     1,     1,     1, 1.0   ,      53.93,    1836.8
+BAAI/bge-small-en-v1.5, Why do I get the error &quot;Unrecognized request argument supplied: functions&quot; when using `fun  ,     0,     1,     1, 0.3333,      55.1 ,    1836.8
+BAAI/bge-small-en-v1.5, The difference between `poetry add` and `poetry install`                                              ,     0,     1,     1, 0.5   ,      26.32,    1836.8
+BAAI/bge-small-en-v1.5, -bash: cannot execute: required file not found                                                        ,     0,     1,     1, 0.5   ,      32.79,    1836.8
+BAAI/bge-small-en-v1.5, Encountering 503 Error When Calling Gemini API from Google Colab                                      ,     0,     1,     1, 0.5   ,      31.65,    1836.8
+BAAI/bge-small-en-v1.5, AttributeError: &#39;FigureCanvasInterAgg&#39; object has no attribute &#39;tostring_rgb&#39;. Did y  ,     0,     1,     1, 0.5   ,      38.06,    1836.8
+BAAI/bge-small-en-v1.5, Find maximum length of consecutive zeros in each row                                                  ,     0,     1,     1, 0.5   ,      34.96,    1836.8
+BAAI/bge-small-en-v1.5, How to group dataframe rows into list in polars group_by                                              ,     0,     1,     1, 0.5   ,      34.63,    1836.8
+BAAI/bge-small-en-v1.5, Is it possible use VS Code to pass multiple command line arguments to Python script?                  ,     0,     1,     1, 0.3333,      41.84,    1836.8
+BAAI/bge-small-en-v1.5, Use polars when-then-otherwise on multiple output columns at once                                     ,     0,     1,     1, 0.3333,      42.1 ,    1836.8
+BAAI/bge-small-en-v1.5, How do I download all files from a Google Drive folder with more than 50 files?                       ,     0,     1,     1, 0.5   ,      43.39,    1836.8
+BAAI/bge-small-en-v1.5, NotImplementedError: Cannot copy out of meta tensor; no data                                          ,     0,     1,     1, 0.3333,      44.81,    1836.8
+BAAI/bge-small-en-v1.5, Segmentation Fault when Using SentenceTransformer Inside Docker Container                             ,     0,     1,     1, 0.3333,      48.48,    1836.8
+BAAI/bge-small-en-v1.5, Pydantic v2 custom type validators with info                                                          ,     0,     1,     1, 0.3333,      43.19,    1836.8
+BAAI/bge-small-en-v1.5, AttributeError: &#39;NoneType&#39; object has no attribute &#39;to_capabilities&#39;. Getting this e  ,     0,     1,     1, 0.3333,      43.93,    1836.8
+BAAI/bge-small-en-v1.5, Where can I find an exhaustive list of actions for spark?                                             ,     0,     1,     1, 0.3333,      30.39,    1836.8
+BAAI/bge-small-en-v1.5, Python Selenium: &#39;unexpected keyword argument &#39;executable_path&#39;                           ,     0,     1,     1, 0.5   ,      32.15,    1836.8
+BAAI/bge-small-en-v1.5, "Why doesn&#39;t langchain ConversationalRetrievalChain remember the chat history, even though I adde",     0,     1,     1, 0.5   ,      45.02,    1836.8
+BAAI/bge-small-en-v1.5, How to Efficiently Convert a Markdown Table to a DataFrame in Python?                                 ,     0,     1,     1, 0.5   ,      38.54,    1836.8
+BAAI/bge-small-en-v1.5, Installing torch with GPU support but without downloading 3 GB of duplicated siloed CUDA libraries?   ,     1,     1,     1, 1.0   ,      45.86,    1836.8
+BAAI/bge-small-en-v1.5, (trapped) error reading bcrypt version v.4.1.2                                                        ,     0,     1,     1, 0.5   ,      36.2 ,    1836.8
+BAAI/bge-small-en-v1.5, Handling complex parentheses structures to get the expected data                                      ,     0,     1,     1, 0.3333,      42.67,    1836.8
+BAAI/bge-small-en-v1.5, What is this Python list containing all tokens from my code?                                          ,     0,     1,     1, 0.5   ,      42.23,    1836.8
+BAAI/bge-small-en-v1.5, OpenAI API error: &quot;The api_key client option must be set either by passing api_key to the clien  ,     1,     1,     1, 1.0   ,      43.82,    1836.8
+BAAI/bge-small-en-v1.5, Generating binary arrays with alternating values based on change indices in NumPy                     ,     0,     1,     1, 0.3333,      32.13,    1836.8
+BAAI/bge-small-en-v1.5, How to determine if a large integer is a power of 3 in Python?                                        ,     0,     1,     1, 0.5   ,      50.43,    1836.8
+BAAI/bge-small-en-v1.5, How do I get out of a venv in VSCODE?                                                                 ,     0,     1,     1, 0.5   ,      49.01,    1836.8
+BAAI/bge-small-en-v1.5, Is there a scenario where `foo in list(bar)` cannot be replaced by `foo in bar`?                      ,     0,     1,     1, 0.5   ,      26.92,    1836.8
+BAAI/bge-small-en-v1.5, ImportError: cannot import name &#39;packaging&#39; from &#39;pkg_resources&#39; when trying to inst  ,     0,     1,     1, 0.5   ,      46.33,    1836.8
+BAAI/bge-small-en-v1.5, SQLAlchemy 2.0 ORM filter show wrong type in Pycharm                                                  ,     0,     1,     1, 0.3333,      29.56,    1836.8
+BAAI/bge-small-en-v1.5, Python sibling relative import error: &#39;no known parent package&#39;                               ,     0,     1,     1, 0.5   ,      46.26,    1836.8
+BAAI/bge-small-en-v1.5, How can I bump the Python package version using uv?                                                   ,     1,     1,     1, 1.0   ,      27.65,    1836.8
+BAAI/bge-small-en-v1.5, How to load a huggingface dataset from local path?                                                    ,     0,     1,     1, 0.5   ,      34.11,    1836.8
+BAAI/bge-small-en-v1.5, ImportError: cannot import name &#39;JSONEncoder&#39; from &#39;flask.json&#39;                       ,     0,     1,     1, 0.5   ,      34.23,    1836.8
+BAAI/bge-small-en-v1.5, How do I do calculations with a sliding window while being memory-efficient?                          ,     0,     1,     1, 0.3333,      54.99,    1837.6
+BAAI/bge-small-en-v1.5, "Llama-2 7B-hf repeats context of question directly from input prompt, cuts off with newlines"        ,     0,     1,     1, 0.5   ,      44.79,    1837.6
+BAAI/bge-small-en-v1.5, Can&#39;t use Jupyter Notebook because of &quot;missing or misshapen translation settings schema&quo  ,     0,     1,     1, 0.5   ,      45.06,    1837.6
+BAAI/bge-small-en-v1.5, Get href link using python playwright                                                                 ,     1,     1,     1, 1.0   ,      34.98,    1837.6
+BAAI/bge-small-en-v1.5, Having trouble to import the library pandas                                                           ,     0,     1,     1, 0.3333,      28.6 ,    1837.6
+BAAI/bge-small-en-v1.5, "Benchmarking a simple hydrology module in R, Python, and Julia"                                      ,     0,     1,     1, 0.5   ,      43.48,    1837.6
+BAAI/bge-small-en-v1.5, SSL: CERTIFICATE_VERIFY_FAILED certificate verify failed : self signed certificate in certificate ch  ,     1,     1,     1, 1.0   ,      48.2 ,    1837.6
+BAAI/bge-small-en-v1.5, Uninstall uv Python package installer                                                                 ,     1,     1,     1, 1.0   ,      25.53,    1837.6
+BAAI/bge-small-en-v1.5, How to return plain text in FastAPI                                                                   ,     1,     1,     1, 1.0   ,      29.41,    1837.6
+BAAI/bge-small-en-v1.5, How do I choose default python homebrew version?                                                      ,     0,     1,     1, 0.3333,      26.47,    1837.6
+BAAI/bge-small-en-v1.5, Split array of integers into subarrays with the biggest sum of difference between min and max         ,     0,     1,     1, 0.5   ,      43.27,    1837.6
+BAAI/bge-small-en-v1.5, OpenAI API: How do I enable JSON mode using the gpt-4-vision-preview model?                           ,     0,     1,     1, 0.3333,      42.87,    1837.6
+BAAI/bge-small-en-v1.5, Why does an operation on a large integer silently overflow?                                           ,     1,     1,     1, 1.0   ,      43.69,    1837.6
+BAAI/bge-small-en-v1.5, How can I mock my environment variables for my pytest?                                                ,     0,     1,     1, 0.5   ,      33.23,    1837.6
+BAAI/bge-small-en-v1.5, Pandas 2.1.0 warning &#39;&#39;The &#39;method&#39; keyword in Series.replace is deprecated and will  ,     0,     1,     1, 0.3333,      28.48,    1837.6
+BAAI/bge-small-en-v1.5, "After `uv init`, adding script to `[project.scripts]` does not work"                                 ,     1,     1,     1, 1.0   ,      26.74,    1837.6
+BAAI/bge-small-en-v1.5, How do I get the generic class property in python                                                     ,     0,     1,     1, 0.5   ,      31.45,    1837.6
+BAAI/bge-small-en-v1.5, Speed up numpy looking for best indices                                                               ,     0,     1,     1, 0.3333,      43.22,    1837.6
+BAAI/bge-small-en-v1.5, How to toggle torch cpu and gpu installation using poetry                                             ,     0,     1,     1, 0.5   ,      45.99,    1837.6
+BAAI/bge-small-en-v1.5, How can I make VS Code format my Python code?                                                         ,     0,     1,     1, 0.3333,      32.24,    1837.6
+BAAI/bge-small-en-v1.5, How to run computations on other rows efficiently                                                     ,     0,     1,     1, 0.3333,      43.32,    1837.6
+BAAI/bge-small-en-v1.5, Diffusers SDXL &quot;TypeError: argument of type &#39;NoneType&#39; is not iterable&quot;             ,     0,     1,     1, 0.3333,      45.18,    1837.6
+BAAI/bge-small-en-v1.5, Finding the last unique string in a list                                                              ,     0,     1,     1, 0.3333,      46.06,    1837.6
+BAAI/bge-small-en-v1.5, How to check if a python package is installed using poetry                                            ,     0,     1,     1, 0.3333,      29.32,    1837.6
+BAAI/bge-small-en-v1.5, Speed-up for finding an optimal partition line                                                        ,     1,     1,     1, 1.0   ,      54.97,    1837.6
+BAAI/bge-small-en-v1.5, From R array to Numpy array                                                                           ,     0,     1,     1, 0.3333,      40.23,    1837.6
+BAAI/bge-small-en-v1.5, Create a Polars Dataframe by appending multiple row at a time                                         ,     0,     1,     1, 0.5   ,      35.35,    1837.6
+BAAI/bge-small-en-v1.5, Unable to use nltk functions                                                                          ,     0,     1,     1, 0.5   ,      60.94,    1837.6
+BAAI/bge-small-en-v1.5, No module named &#39;urllib3.packages.six.moves&#39;                                                  ,     0,     1,     1, 0.3333,      43.53,    1837.6
+BAAI/bge-small-en-v1.5, What&#39;s the correct way to use user local python environment under PEP668?                         ,     0,     1,     1, 0.5   ,      51.11,    1837.6
+BAAI/bge-small-en-v1.5, InvalidDimensionException: Embedding dimension 384 does not match collection dimensionality 1536      ,     1,     1,     1, 1.0   ,      31.08,    1837.6
+BAAI/bge-small-en-v1.5, Using poetry to install from a private repository with a token                                        ,     0,     1,     1, 0.5   ,      43.91,    1837.6
+BAAI/bge-small-en-v1.5, Add startup/shutdown handlers to FastAPI app with lifespan API                                        ,     0,     1,     1, 0.5   ,      45.82,    1837.6
+BAAI/bge-small-en-v1.5, Polars - How to use `pl.when` to output a string value                                                ,     0,     1,     1, 0.5   ,      29.45,    1837.6
+BAAI/bge-small-en-v1.5, Create groups in time series data based on potential start and end boolean columns (vectorized solut  ,     0,     1,     1, 0.3333,      47.5 ,    1837.6
+BAAI/bge-small-en-v1.5, Error Installing Package to Python - Error with requirements to build wheel                           ,     0,     1,     1, 0.5   ,      45.68,    1837.6
+BAAI/bge-small-en-v1.5, AttributeError: `np.string_` was removed in the NumPy 2.0 release. Use `np.bytes_` instead.. Did you  ,     1,     1,     1, 1.0   ,      44.77,    1837.6
+BAAI/bge-small-en-v1.5, Find minimum and maximum values in OHLC data                                                          ,     0,     1,     1, 0.5   ,      46.83,    1837.6
+BAAI/bge-small-en-v1.5, "Tensorflow 2.13.1, no matching distribution found for tensorflow-text 2.13.0"                        ,     0,     1,     1, 0.3333,      42.85,    1837.6
+BAAI/bge-small-en-v1.5, Randomly getting &quot;ValueError: PyCapsule_New called with null pointer&quot; when making plots wi  ,     0,     1,     1, 0.3333,      52.22,    1837.6
+BAAI/bge-small-en-v1.5, Managing ALLOWED_HOSTS in Django for Kubernetes health check                                          ,     0,     1,     1, 0.3333,      53.88,    1837.6
+BAAI/bge-small-en-v1.5, error: command &#39;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.  ,     0,     1,     1, 0.5   ,      37.78,    1837.6
+BAAI/bge-small-en-v1.5, Generate 4 random numbers between -1.0 and 1.0 such their sum is 1 using python                       ,     0,     1,     1, 0.3333,      36.98,    1837.6
+BAAI/bge-small-en-v1.5, Best way to count tokens for Anthropic Claude Models using the API?                                   ,     1,     1,     1, 1.0   ,      42.41,    1837.6
+BAAI/bge-small-en-v1.5, PyLance in Visual Studio Code does not recognise Poetry virtual env dependencies                      ,     0,     1,     1, 0.3333,      43.64,    1837.6
+BAAI/bge-small-en-v1.5, How to efficiently carry out a priority-based $or query in MongoDB with 10 billion records?           ,     0,     1,     1, 0.3333,      45.75,    1837.6
+BAAI/bge-small-en-v1.5, Pylance in VS Code crashes when adding or deleting cells in a Jupyter notebook                        ,     1,     1,     1, 1.0   ,      38.96,    1837.6
+BAAI/bge-small-en-v1.5, Type checking python function signatures of Protocol subclass with mypy                               ,     0,     1,     1, 0.5   ,      42.37,    1837.6
+BAAI/bge-small-en-v1.5, Create Literal type from constant variables                                                           ,     1,     1,     1, 1.0   ,      35.36,    1837.6
+BAAI/bge-small-en-v1.5, Is it possible to run autograd backward one node at a time?                                           ,     0,     1,     1, 0.5   ,      43.59,    1837.6
+BAAI/bge-small-en-v1.5, Creating a TypedDict with enum keys                                                                   ,     0,     1,     1, 0.5   ,      38.88,    1837.6
+BAAI/bge-small-en-v1.5, Custom loss in XGBoost is not updating                                                                ,     1,     1,     1, 1.0   ,      42.24,    1837.6
+BAAI/bge-small-en-v1.5, "ERROR: Could not build wheels for fasttext, which is required to install pyproject.toml-based projec",     0,     1,     1, 0.5   ,      28.19,    1837.6
+BAAI/bge-small-en-v1.5, How to fix - UserWarning: Pydantic serializer warnings in Pydantic V2?                                ,     0,     1,     1, 0.3333,      39.65,    1837.6
+BAAI/bge-small-en-v1.5, Regex a string with a space between words                                                             ,     0,     1,     1, 0.5   ,      28.35,    1837.6
+BAAI/bge-small-en-v1.5, "&quot;ERROR: Could not build wheels for dlib, which is required to install pyproject.toml-based proj",     0,     1,     1, 0.5   ,      47.64,    1837.6
+BAAI/bge-small-en-v1.5, VS Code Jupyter Notebook Output Cell Word Wrapping Not Working                                        ,     1,     1,     1, 1.0   ,      25.58,    1837.6
+BAAI/bge-small-en-v1.5, AttributeError: &#39;super&#39; object has no attribute &#39;init&#39;                                ,     0,     1,     1, 0.5   ,      44.22,    1837.6
+BAAI/bge-small-en-v1.5, ModuleNotFoundError while importing moviepy.editor                                                    ,     0,     1,     1, 0.3333,      27.73,    1837.6
+BAAI/bge-small-en-v1.5, Removing elements based on nested dictionary values                                                   ,     0,     1,     1, 0.3333,      39.96,    1837.6
+BAAI/bge-small-en-v1.5, Anaconda Navigator Cannot initalize GLX                                                               ,     1,     1,     1, 1.0   ,      41.92,    1837.6
+BAAI/bge-small-en-v1.5, Finding the last row that meets conditions of a mask                                                  ,     0,     1,     1, 0.3333,      33.61,    1837.6
+BAAI/bge-small-en-v1.5, Is there a known working configuration for using Selenium on linux-arm64?                             ,     1,     1,     1, 1.0   ,      42.35,    1837.6
+BAAI/bge-small-en-v1.5, "Least common multiple of natural numbers up to a limit, say, 10&#39;000&#39;000"                     ,     0,     1,     1, 0.5   ,      36.32,    1837.6
+BAAI/bge-small-en-v1.5, Installing dependencies with Python Poetry is stuck on &quot;Pending...&quot;                         ,     0,     1,     1, 0.3333,      26.34,    1837.6
+BAAI/bge-small-en-v1.5, Problem after upgrading to django 5.0 &quot;AttributeError: &#39;BlankChoiceIterator&#39; object has  ,     0,     1,     1, 0.3333,      45.08,    1837.6
+BAAI/bge-small-en-v1.5, Change fields in pdf using pypdf?                                                                     ,     0,     1,     1, 0.5   ,      41.99,    1837.6
+BAAI/bge-small-en-v1.5, "How to skip, if starts with, but match other strings"                                                ,     0,     1,     1, 0.3333,      37.29,    1837.6
+BAAI/bge-small-en-v1.5, FastAPI with uvicorn doesn&#39;t update                                                               ,     0,     1,     1, 0.5   ,      37.17,    1837.6
+BAAI/bge-small-en-v1.5, What is the point of usedforsecurity?                                                                 ,     0,     1,     1, 0.3333,      37.91,    1837.6
+BAAI/bge-small-en-v1.5, PydanticImportError: `BaseSettings` has been moved to the `pydantic-settings` package                 ,     0,     1,     1, 0.3333,      28.8 ,    1837.6
+BAAI/bge-small-en-v1.5, How to compose functions through purely using Python&#39;s standard library?                          ,     0,     1,     1, 0.3333,      44.99,    1837.6
+BAAI/bge-small-en-v1.5, Local Azure Function: Customer packages not in sys path. This should never happen                     ,     0,     1,     1, 0.5   ,      41.81,    1837.6
+BAAI/bge-small-en-v1.5, Pythonic way of dropping columns used in assign (i.e. Pandas equivalent of `.keep = &quot;unused&quo  ,     0,     1,     1, 0.5   ,      43.8 ,    1837.6
+BAAI/bge-small-en-v1.5, How can I install Python library in ChatGPT Code Interpreter                                          ,     0,     1,     1, 0.5   ,      26.45,    1837.6
+BAAI/bge-small-en-v1.5, Can you have a progress bar for sorting a list?                                                       ,     0,     1,     1, 0.5   ,      43.29,    1837.6
+BAAI/bge-small-en-v1.5, Python `typing.cast` method vs colon type hints                                                       ,     0,     1,     1, 0.3333,      36.53,    1837.6
+BAAI/bge-small-en-v1.5, FutureWarning: &#39;DataFrame.swapaxes&#39; is deprecated and will be removed in a future version     ,     0,     1,     1, 0.5   ,      28.56,    1837.6
+BAAI/bge-small-en-v1.5, Check if Series has Values in Range                                                                   ,     1,     1,     1, 1.0   ,      41.1 ,    1837.6
+BAAI/bge-small-en-v1.5, ModuleNotFoundError: No module named &#39;google.generative&#39;                                      ,     0,     1,     1, 0.3333,      28.91,    1837.6
+BAAI/bge-small-en-v1.5, Langchain / ChromaDB: Why does VectorStore return so many duplicates?                                 ,     1,     1,     1, 1.0   ,      50.44,    1837.6
+BAAI/bge-small-en-v1.5, Getting min/max column name in Polars                                                                 ,     0,     1,     1, 0.5   ,      37.23,    1837.6
+BAAI/bge-small-en-v1.5, Problem with initializing AzureChatOpenAI()                                                           ,     1,     1,     1, 1.0   ,      50.37,    1837.6
+BAAI/bge-small-en-v1.5, Why is numba popcount code twice as fast as equivalent C code?                                        ,     0,     1,     1, 0.3333,      60.27,    1837.6
+BAAI/bge-small-en-v1.5, Why is the continued fraction expansion of arctangent combined with half-angle formula not working w  ,     0,     1,     1, 0.3333,      62.91,    1837.8
+BAAI/bge-small-en-v1.5, Python Xarray ValueError: unrecognized chunk manager dask - must be one of: []                        ,     0,     1,     1, 0.3333,      55.94,    1837.8
+BAAI/bge-small-en-v1.5, How do I select the top k rows of a python polars dataframe for each group?                           ,     0,     1,     1, 0.3333,      55.66,    1837.8
+BAAI/bge-small-en-v1.5, Format datetime in polars                                                                             ,     0,     1,     1, 0.5   ,      30.04,    1837.8
+BAAI/bge-small-en-v1.5, Stable diffusion: AttributeError: module &#39;jax.random&#39; has no attribute &#39;KeyArray&#39;     ,     0,     1,     1, 0.5   ,      32.57,    1837.8
+BAAI/bge-small-en-v1.5, OpenAI from Langchain requires &quot;openai_api_key&quot; even though it is loaded                    ,     0,     1,     1, 0.3333,      41.56,    1837.8
+BAAI/bge-small-en-v1.5, How to write to a SQLite database using Polars in Python?                                             ,     1,     1,     1, 1.0   ,      33.1 ,    1837.8
+BAAI/bge-small-en-v1.5, HTML/XML: Understanding How &quot;Scroll Bars&quot; Work                                              ,     0,     1,     1, 0.5   ,      46.07,    1837.8
+BAAI/bge-small-en-v1.5, UI element for an infinite scrolling image gallery for 100k images: which data structure?             ,     0,     1,     1, 0.5   ,      44.58,    1837.8
+BAAI/bge-small-en-v1.5, Explode multiple columns with different lengths                                                       ,     1,     1,     1, 1.0   ,      35.94,    1837.8
+BAAI/bge-small-en-v1.5, How to get the value of a specified index number from the sorting of a column and fill it with null   ,     1,     1,     1, 1.0   ,      43.25,    1837.8
+BAAI/bge-small-en-v1.5, How to explode multiple List[_] columns with missing values in python polars?                         ,     0,     1,     1, 0.5   ,      42.52,    1837.8
+BAAI/bge-small-en-v1.5, Predict trajectory of a bouncing ball                                                                 ,     1,     1,     1, 1.0   ,      58.32,    1837.8
+BAAI/bge-small-en-v1.5, AttributeError: module &#39;chromadb&#39; has no attribute &#39;config&#39;                           ,     0,     1,     1, 0.3333,      40.91,    1837.8
+BAAI/bge-small-en-v1.5, Is it possible to get pydantic v2 to dump json with sorted keys?                                      ,     0,     1,     1, 0.3333,      35.74,    1837.8
+BAAI/bge-small-en-v1.5, What happens to the asyncio event loop when multiple CPU-bound tasks run concurrently in a ThreadPoo  ,     0,     1,     1, 0.3333,      49.04,    1837.8
+BAAI/bge-small-en-v1.5, Persist ParentDocumentRetriever of langchain                                                          ,     0,     1,     1, 0.3333,      43.57,    1837.8
+BAAI/bge-small-en-v1.5, Apache Arrow with Apache Spark - UnsupportedOperationException: sun.misc.Unsafe or java.nio.DirectBy  ,     0,     1,     1, 0.3333,      38.07,    1837.8
+BAAI/bge-small-en-v1.5, Parallelizing numpy.sort                                                                              ,     0,     1,     1, 0.3333,      48.33,    1837.8
+BAAI/bge-small-en-v1.5, "New column, sampled from list, based on column value"                                                ,     0,     1,     1, 0.3333,      29.23,    1837.8
+BAAI/bge-small-en-v1.5, _MissingDynamic: `license` defined outside of `pyproject.toml` is ignored                             ,     0,     1,     1, 0.3333,      47.52,    1837.8
+BAAI/bge-small-en-v1.5, ValueError: &quot;Requirement&quot; object has no field &quot;use_pep517&quot; when installing Pytho  ,     1,     1,     1, 1.0   ,      45.02,    1837.8
+BAAI/bge-small-en-v1.5, Documenting a script step by step with Sphinx                                                         ,     0,     1,     1, 0.5   ,      43.09,    1837.8
+BAAI/bge-small-en-v1.5, Is OpenTelemetry in Python safe to use with Async?                                                    ,     1,     1,     1, 1.0   ,      32.82,    1837.8
+BAAI/bge-small-en-v1.5, Function to sum over repeated indices                                                                 ,     0,     1,     1, 0.3333,      45.28,    1837.8
+BAAI/bge-small-en-v1.5, Enable ruff rules only on specific files                                                              ,     1,     1,     1, 1.0   ,      26.35,    1837.8
+BAAI/bge-small-en-v1.5, How to install tensorflow-gpu from anaconda?                                                          ,     0,     1,     1, 0.5   ,      43.69,    1837.8
+BAAI/bge-small-en-v1.5, Handling Circular Imports in Pydantic models with FastAPI                                             ,     0,     1,     1, 0.3333,      43.99,    1837.8
+BAAI/bge-small-en-v1.5, How to choose the best fitting method?                                                                ,     0,     1,     1, 0.3333,      47.97,    1837.8
+BAAI/bge-small-en-v1.5, Good way to view matrices and higher dimensional arrays in VScode                                     ,     0,     1,     1, 0.3333,      38.38,    1837.8
+BAAI/bge-small-en-v1.5, Can&#39;t create Race Condition in Python 3.11 using multiple threads                                 ,     0,     1,     1, 0.3333,      46.9 ,    1837.8
+BAAI/bge-small-en-v1.5, Separate lru for each argument value?                                                                 ,     0,     1,     1, 0.3333,      42.24,    1837.8
+BAAI/bge-small-en-v1.5, Why does `strftime(&quot;%Y&quot;)` not yield a 4-digit year for dates &lt; 1000 AD in Python&#39;s   ,     0,     1,     1, 0.3333,      43.13,    1837.8
+BAAI/bge-small-en-v1.5, function vs class vs module vs package vs session for fixture scopes in Pytest                        ,     0,     1,     1, 0.5   ,      35.95,    1837.8
+BAAI/bge-small-en-v1.5, Identifying Correct JAR Versions for S3 Integration with PySpark 3.5                                  ,     0,     1,     1, 0.5   ,      43.84,    1837.8
+BAAI/bge-small-en-v1.5, How to configure python-lsp-server in NvChad                                                          ,     0,     1,     1, 0.5   ,      41.82,    1837.8
+BAAI/bge-small-en-v1.5, seleniumbase (undetected Chrome driver): how to set request header?                                   ,     0,     1,     1, 0.3333,      33.05,    1837.8
+BAAI/bge-small-en-v1.5, Clear all the GPU memory used by pytorch in current python code without exiting python                ,     0,     1,     1, 0.3333,      41.27,    1837.8
+BAAI/bge-small-en-v1.5, ImportError: cannot import name &#39;Tensor&#39; from &#39;torch&#39; (unknown location)              ,     0,     1,     1, 0.5   ,      26.07,    1837.8
+BAAI/bge-small-en-v1.5, Python method overriding - more specific arguments in derived than base class                         ,     0,     1,     1, 0.3333,      40.49,    1837.8
+BAAI/bge-small-en-v1.5, Why my anaconda keeps showing &quot;Error while loading conda entry point&quot;?                      ,     1,     1,     1, 1.0   ,      27.77,    1837.8
+BAAI/bge-small-en-v1.5, "How to migrate from a simple Python project : requirements.txt setup.py (setuptools), to a uv projec",     0,     1,     1, 0.3333,      42.31,    1837.8
+BAAI/bge-small-en-v1.5, What exactly is slowing np.sum down?                                                                  ,     0,     1,     1, 0.5   ,      47.69,    1837.8
+BAAI/bge-small-en-v1.5, Where does uvicorn/FastAPI display/log unhandled errors?                                              ,     0,     1,     1, 0.5   ,      45.71,    1837.8
