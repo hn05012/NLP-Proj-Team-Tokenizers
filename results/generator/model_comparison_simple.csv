@@ -1,0 +1,7 @@
+model           , finetuned, total_samples, avg_rougeL, avg_bert_f1, avg_latency_ms, avg_hallucination, rougeL_std, bert_f1_std, latency_std
+flan-t5-base    , False    ,            70,     0.052 , -0.3925    ,         496.01,               0.0,     0.0564,      0.9738,      491.36
+flan-t5-base-ft , True     ,            70,     0.0586, -0.1758    ,         492.33,               0.0,     0.0507,      0.164 ,      311.48
+flan-t5-large   , False    ,            70,     0.051 , -0.4789    ,         977.94,               0.0,     0.0621,      1.1084,     1118.04
+flan-t5-large-ft, True     ,            70,     0.0   , -4.9251    ,        4377.81,               0.0,     0.0   ,      0.0   ,       45.47
+flan-t5-small   , False    ,            70,     0.0517, -0.3395    ,         309.48,               0.0,     0.0521,      0.8056,      272.81
+flan-t5-small-ft, True     ,            70,     0.0153, -0.3656    ,         288.09,               0.0,     0.0263,      0.1752,      512.02
